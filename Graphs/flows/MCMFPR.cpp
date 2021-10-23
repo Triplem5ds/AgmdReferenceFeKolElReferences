@@ -22,7 +22,12 @@ struct MinCostFlow {
         cost_t c;
         flow_t f;
         int to, rev;
-        Edge(int _to, cost_t _c, flow_t _f, int _rev) : c(_c), f(_f), to(_to), rev(_rev) {}
+        Edge(int _to, cost_t _c, flow_t _f, int _rev) {
+            c = _c;
+            f = _f;
+            to = _to;
+            rev = _rev;
+        }
     };
 
     int N, S, T;
