@@ -1,9 +1,14 @@
 /*  
     Notes:
         note that n must be <= m
-        so in case in your problem n >= m, just swap them
+        so in case in your problem n >= m, just swap 
+    also note this
+    void set(int x, int y, ll v){a[x+1][y+1]=v;}
+    the algorithim assumes you're using 0-index
+    but it's using 1-based
 */
 struct Hungarian {
+    const ll INF = 1000000000000000000; ///10^18
 	int n,m;
 	vector<vector<ll> > a;
 	vector<ll> u,v;vector<int> p,way;
@@ -34,4 +39,10 @@ struct Hungarian {
 		}
 		return -v[0];
 	}
+    vector<int> restoreAnswer() {   ///run it after assign
+        vector<int> ans (n+1);
+        for (int j=1; j<=m; ++j)
+            ans[p[j]] = j;
+        return ans;
+    }
 };
