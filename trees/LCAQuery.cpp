@@ -5,7 +5,7 @@ vector<int> adj[N];
 int pa[N][LG], lvl[N];
 int in[N], out[N], timer;
 void dfs(int u, int p){
-  in[u] = timer++;
+  in[u] = ++timer;
   for(int k = 1; k < LG; k++)
     pa[u][k] = pa[pa[u][k-1]][k-1];
   for(auto v : adj[u])
@@ -14,7 +14,7 @@ void dfs(int u, int p){
        pa[v][0] = u;
        dfs(v, u);
      }
-  out[u] = timer++;
+  out[u] = timer;
 }
 int LCA(int u, int v){
   if(lvl[u] > lvl[v])
