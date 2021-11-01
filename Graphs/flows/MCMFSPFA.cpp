@@ -1,21 +1,11 @@
-// Source: https://github.com/dacin21/dacin21_codebook/blob/master/flow/mincost_PRonly.cpp
-//
-// Notes:
-// - Index from 0
-// - Costs multiplied by N --> overflow when big cost?
-// - Does not work with floating point..
-//
-// Tested:
-// - https://www.infoarena.ro/problema/fmcm
-// - https://open.kattis.com/problems/mincostmaxflow
-// - http://vn.spoj.com/problems/MINCOST  (trace)
-// - https://codeforces.com/blog/entry/70740
-//
-//  User as MinCostFlow<flowDataType,CostDataType> flow(nodes,source,sink)
-//  flow.addEdge(u,v,flow,cost)
-//  flow.minCostMaxFlow() = (flow, cost)
-
-
+/*	
+	Notes:
+		make sure you notice the #define int ll
+		focus on the data types of the max flow everythign inside is integer
+		addEdge(u,v,cap,cost)
+		minCostFlow(int source, int dest, int maxflow), maxflow is to bind that no flow is more than this flow
+		note that for min cost max flow the cost is sum of cost * flow over all edges
+*/
 #define int ll
 struct edge
 {
