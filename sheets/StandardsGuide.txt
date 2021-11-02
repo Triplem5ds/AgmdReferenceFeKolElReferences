@@ -1,0 +1,13 @@
+Notes:
+    1. Max flow is just choosing the maximum number of paths between source and sink
+    2. If you have a problem that tells you choose a[i] or b[i] (or a range)
+    choose one of them initially and play a take or leave on the other
+1. Assignment Problems:
+    a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
+    b. If you see a problem that tells for some X choose a Y (think flows)
+    c. If the problem tells you to choose a Y from L->R (think range flow i.e putting edges between the same layer)
+2. XOR problems:
+    a. If the problem tells your something about choosing an XOR of a subset (think FWHT or XOR-basis)
+    b. If the problem tells you about getting XOR of a tree path let a[i] = XOR tree from root to i and solve this as an array
+    c. If the problem tells you range XOR sth it's better to have prefix XOR and make it pairs XOR.
+    
