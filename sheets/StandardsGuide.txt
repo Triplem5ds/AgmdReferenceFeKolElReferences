@@ -10,4 +10,11 @@ Notes:
     a. If the problem tells your something about choosing an XOR of a subset (think FWHT or XOR-basis)
     b. If the problem tells you about getting XOR of a tree path let a[i] = XOR tree from root to i and solve this as an array
     c. If the problem tells you range XOR sth it's better to have prefix XOR and make it pairs XOR.
-    
+3. Subset Problems
+    a. Problems that tells you what is the number of ways to choose X out of N that has some property (think convolution)
+
+4. Decompositions
+    a. If a problem is a sking you to calculate the answer after K steps
+    you can calculate the answer for K%squareRoot and for K/SquareRoot
+    b. If the nubmer of queries is significintly larger than updates or vice versa
+    you can use square root Decompositions to give advantage to one over the other
