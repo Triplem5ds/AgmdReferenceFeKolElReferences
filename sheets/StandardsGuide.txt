@@ -2,6 +2,7 @@ Notes:
     1. Max flow is just choosing the maximum number of paths between source and sink
     2. If you have a problem that tells you choose a[i] or b[i] (or a range)
     choose one of them initially and play a take or leave on the other
+    3. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
 1. Assignment Problems:
     a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
     b. If you see a problem that tells for some X choose a Y (think flows)
