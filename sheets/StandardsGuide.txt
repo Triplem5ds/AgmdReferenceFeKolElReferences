@@ -26,3 +26,4 @@ Notes:
     b.  Problems that tell you find the largest substring with some property (Use Suffix links)
     c.  Remember suffix links are the same as aho corasic failure links (you can memoize them with dp)
     d.  Problems that ask you to get the k-th string (can be either suffix automaton or array)
+    e.  Longest Common Substring is mostly a (suffix automaton-array) thing
