@@ -3,6 +3,7 @@ Notes:
     2. If you have a problem that tells you choose a[i] or b[i] (or a range)
     choose one of them initially and play a take or leave on the other
     3. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
+    4. Check datatypes (if you are getting WA or TLE or RTE)
 1. Assignment Problems:
     a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
     b. If you see a problem that tells for some X choose a Y (think flows)
@@ -19,3 +20,9 @@ Notes:
     you can calculate the answer for K%squareRoot and for K/SquareRoot
     b. If the nubmer of queries is significintly larger than updates or vice versa
     you can use square root Decompositions to give advantage to one over the other
+
+5. Suffix Automaton
+    a.  Problems that tell you cound stuff that appears X times or count appearnces (Use suffixr links)
+    b.  Problems that tell you find the largest substring with some property (Use Suffix links)
+    c.  Remember suffix links are the same as aho corasic failure links (you can memoize them with dp)
+    d.  Problems that ask you to get the k-th string (can be either suffix automaton or array)
