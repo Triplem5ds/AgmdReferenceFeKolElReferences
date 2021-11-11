@@ -24,3 +24,15 @@ int qry(int node, int s, int e, int l, int r){
   int md = (s+e)>>1;
   return max(qry(L[node], s, md, l, r), qry(R[node],md+1,e,l,r));
 }
+int merge(int x, int y, int s, int e) {
+    if(!x||!y)return x | y;
+    if(s == e) {
+        val[x] += val[y];
+        return x;
+    }
+    int md = (s + e) >> 1;
+    L[x] = merge(L[x], L[y], s, md);
+    R[x] = merge(R[x], R[y], md+1,e);
+    val[x] = val[L[x]] + val[R[x]];
+    return x;
+}
