@@ -1,11 +1,12 @@
 Notes:
-    1. Max flow is just choosing the maximum number of paths between source and sink
-    2. If you have a problem that tells you choose a[i] or b[i] (or a range)
+    1. Don't forget to solve the problem in reverse (i.e deleting->adding or adding->deleting, ...etc)
+    2. Max flow is just choosing the maximum number of paths between source and sink
+    3. If you have a problem that tells you choose a[i] or b[i] (or a range)
     choose one of them initially and play a take or leave on the other
-    3. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
-    4. Check datatypes (if you are getting WA or TLE or RTE)
-    5. in case of merging between sets (i.e i + j or sth) think bitset first
-    6. If you have a TLE soln using bitset might help
+    4. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
+    5. Check datatypes (if you are getting WA or TLE or RTE)
+    6. in case of merging between sets (i.e i + j or sth) think bitset first
+    7. If you have a TLE soln using bitset might help
 1. Assignment Problems:
     a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
     b. If you see a problem that tells for some X choose a Y (think flows)
@@ -42,3 +43,4 @@ Notes:
     e. In case of asking F(node, x) for each node it's probably DP on Trees
 
 8. Flows
+    a. If you want to make a K-covering instead of consdirign lit edges consider non-lit edges
