@@ -4,6 +4,8 @@ Notes:
     choose one of them initially and play a take or leave on the other
     3. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
     4. Check datatypes (if you are getting WA or TLE or RTE)
+    5. in case of merging between sets (i.e i + j or sth) think bitset first
+    6. If you have a TLE soln using bitset might help
 1. Assignment Problems:
     a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
     b. If you see a problem that tells for some X choose a Y (think flows)
@@ -21,9 +23,22 @@ Notes:
     b. If the nubmer of queries is significintly larger than updates or vice versa
     you can use square root Decompositions to give advantage to one over the other
 
-5. Suffix Automaton
+5. Strings
     a.  Problems that tell you cound stuff that appears X times or count appearnces (Use suffixr links)
     b.  Problems that tell you find the largest substring with some property (Use Suffix links)
     c.  Remember suffix links are the same as aho corasic failure links (you can memoize them with dp)
     d.  Problems that ask you to get the k-th string (can be either suffix automaton or array)
     e.  Longest Common Substring is mostly a (suffix automaton-array) thing
+
+6. DataS tructures
+    a.  Problems that ask you to count the numbers v where (X <= v <= Y) can be solved with (MO-SquareRoot-PersistentSegTree-Wavelet)
+    b.  
+
+7. Trees
+    a. For problems that ask you to count stuff in a substree think (Euler Tour with RQ - Small to Large - DSU on Trees - PersistentSegTree)
+    b. For Path Problems think (Centroid Decomposition - HLD)
+    c. For a path think (HLD + Euler Tour)
+    d. Note that the farthest node to any node in the tree is one of the two diameter heads
+    e. In case of asking F(node, x) for each node it's probably DP on Trees
+
+8. Flows
