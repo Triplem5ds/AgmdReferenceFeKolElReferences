@@ -1,4 +1,4 @@
-///O(ElgFlow) on Bipratite Graphs and O(EVlgFlow) on other graphs
+///O(ElgFlow) on Bipratite Graphs and O(EVlgFlow) on other graphs (I think)
 struct Dinic {
     #define vi vector<int>
     #define rep(i,a,b)  f(i,a,b)
