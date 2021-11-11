@@ -30,7 +30,7 @@ Notes:
     d.  Problems that ask you to get the k-th string (can be either suffix automaton or array)
     e.  Longest Common Substring is mostly a (suffix automaton-array) thing
 
-6. DataS tructures
+6. Data Structures
     a.  Problems that ask you to count the numbers v where (X <= v <= Y) can be solved with (MO-SquareRoot-PersistentSegTree-Wavelet)
     b.  
 
