@@ -6,110 +6,67 @@
 		minCostFlow(int source, int dest, int maxflow), maxflow is to bind that no flow is more than this flow
 		note that for min cost max flow the cost is sum of cost * flow over all edges
 */
-#define int ll
-struct edge
-{
-	int to, flow, cap, cost, rev;
+struct Edge {
+    int to;
+    int cost;
+    int cap, flow, backEdge;
 };
- 
-struct MinCostMaxFlow
-{
-	int nodes;
-	vector<int> prio, curflow, prevedge, prevnode, q, pot;
-	vector<bool> inqueue;
-	vector<vector<edge> > graph;
-	MinCostMaxFlow() {}
- 
-	MinCostMaxFlow(int n): nodes(n), prio(n, 0), curflow(n, 0),
-	prevedge(n, 0), prevnode(n, 0), q(n, 0), pot(n, 0), inqueue(n, 0), graph(n) {}
- 
-	void addEdge(int source, int to, int capacity, int cost)
-	{
-		edge a = {to, 0, capacity, cost, (int)graph[to].size()};
-		edge b = {source, 0, 0, -cost, (int)graph[source].size()};
-		graph[source].push_back(a);
-		graph[to].push_back(b);
-	}
- 
-	void bellman_ford(int source, vector<int> &dist)
-	{
-		fill(dist.begin(), dist.end(), INT_MAX);
-		dist[source] = 0;
-		int qt=0;
-		q[qt++] = source;
-		for(int qh=0;(qh-qt)%nodes!=0;qh++)
-		{
-			int u = q[qh%nodes];
-			inqueue[u] = false;
-			for(auto &e : graph[u])
-			{
-				if(e.flow >= e.cap)
-					continue;
-				int v = e.to;
-				int newDist = dist[u] + e.cost;
-				if(dist[v] > newDist)
-				{
-					dist[v] = newDist;
-					if(!inqueue[v])
-					{
-						inqueue[v] = true;
-						q[qt++ % nodes] = v;
-					}
-				}
-			}
-		}
-	}
- 
-	pair<int, int> minCostFlow(int source, int dest, int maxflow)
-	{
-		bellman_ford(source, pot);
-		int flow = 0;
-		int flow_cost = 0;
-		while(flow < maxflow)
-		{
-			priority_queue<pair<int, int>, vector<pair<int, int> >, greater<pair<int, int> > > q;
-			q.push({0, source});
-			fill(prio.begin(), prio.end(), INT_MAX);
-			prio[source] = 0;
-			curflow[source] = INT_MAX;
-			while(!q.empty())
-			{
-				int d = q.top().first;
-				int u = q.top().second;
-				q.pop();
-				if(d != prio[u])
-					continue;
-				for(int i=0;i<graph[u].size();i++)
-				{
-					edge &e=graph[u][i];
-					int v = e.to;
-					if(e.flow >= e.cap)
-						continue;
-					int newPrio = prio[u] + e.cost + pot[u] - pot[v];
-					if(prio[v] > newPrio)
-					{
-						prio[v] = newPrio;
-						q.push({newPrio, v});
-						prevnode[v] = u;
-						prevedge[v] = i;
-						curflow[v] = min(curflow[u], e.cap - e.flow);
-					}
-				}
-			}
-			if(prio[dest] == INT_MAX)
-				break;
-			for(int i=0;i<nodes;i++)
-				pot[i]+=prio[i];
-			int df = min(curflow[dest], maxflow - flow);
-			flow += df;
-			for(int v=dest;v!=source;v=prevnode[v])
-			{
-				edge &e = graph[prevnode[v]][prevedge[v]];
-				e.flow += df;
-				graph[v][e.rev].flow -= df;
-				flow_cost += df * e.cost;
-			}
-		}
-		return {flow, flow_cost};
-	}
+const int mxN = 3005;
+struct MCMF {
+
+    const int inf = 1000000010;
+    int s, t, n;
+    vector<Edge> g[mxN];
+    MCMF(int _s, int _t, int _n) {
+        s = _s, t = _t, n = _n+1;
+    }
+    void addEdge(int u, int v, int cap, int cost) {
+        Edge e1 = { v, cost, cap, 0, (int)g[v].size() };
+        Edge e2 = { u, -cost, 0, 0, (int)g[u].size() };
+        g[u].push_back(e1); g[v].push_back(e2);
+    }
+    pair<int, int> minCostMaxFlow() {
+        int flow = 0;
+        int cost = 0;
+        vector<int> state(n), from(n), from_edge(n);
+        vector<int> d(n);
+        deque<int> q;
+        while (true) {
+            for (int i = 0; i < n; i++)
+                state[i] = 2, d[i] = inf, from[i] = -1;
+            state[s] = 1; q.clear(); q.push_back(s); d[s] = 0;
+            while (!q.empty()) {
+                int v = q.front(); q.pop_front(); state[v] = 0;
+                for (int i = 0; i < (int) g[v].size(); i++) {
+                    Edge e = g[v][i];
+                    if (e.flow >= e.cap || (d[e.to] <= d[v] + e.cost) )
+                        continue;
+                    int to = e.to; d[to] = d[v] + e.cost;
+                    from[to] = v; from_edge[to] = i;
+                    if (state[to] == 1) continue;
+                    if (!state[to] || (!q.empty() && d[q.front()] > d[to]))
+                        q.push_front(to);
+                    else q.push_back(to);
+                    state[to] = 1;
+                }
+            }
+            if (d[t] == inf) break;
+            int it = t, addflow = inf;
+            while (it != s) {
+                addflow = min(addflow,
+                              g[from[it]][from_edge[it]].cap
+                              - g[from[it]][from_edge[it]].flow);
+                it = from[it];
+            }
+            it = t;
+            while (it != s) {
+                g[from[it]][from_edge[it]].flow += addflow;
+                g[it][g[from[it]][from_edge[it]].backEdge].flow -= addflow;
+                cost += g[from[it]][from_edge[it]].cost * addflow;
+                it = from[it];
+            }
+            flow += addflow;
+        }
+        return {cost,flow};
+    }
 };
