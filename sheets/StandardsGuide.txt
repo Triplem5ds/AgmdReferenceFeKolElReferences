@@ -3,10 +3,11 @@ Notes:
     2. Max flow is just choosing the maximum number of paths between source and sink
     3. If you have a problem that tells you choose a[i] or b[i] (or a range)
     choose one of them initially and play a take or leave on the other
-    4. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
-    5. Check datatypes (if you are getting WA or TLE or RTE)
-    6. in case of merging between sets (i.e i + j or sth) think bitset first
-    7. If you have a TLE soln using bitset might help
+    4. If the problem tells you to do something cyclic solving it for x + x
+    5. Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
+    6. Check datatypes (if you are getting WA or TLE or RTE)
+    7. in case of merging between sets (i.e i + j or sth) think bitset first
+    8. If you have a TLE soln using bitset might help
 1. Assignment Problems:
     a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
     b. If you see a problem that tells for some X choose a Y (think flows)
@@ -17,30 +18,27 @@ Notes:
     c. If the problem tells you range XOR sth it's better to have prefix XOR and make it pairs XOR.
 3. Subset Problems
     a. Problems that tells you what is the number of ways to choose X out of N that has some property (think convolution)
-
 4. Decompositions
     a. If a problem is a sking you to calculate the answer after K steps
     you can calculate the answer for K%squareRoot and for K/SquareRoot
     b. If the nubmer of queries is significintly larger than updates or vice versa
     you can use square root Decompositions to give advantage to one over the other
-
 5. Strings
-    a.  Problems that tell you cound stuff that appears X times or count appearnces (Use suffixr links)
-    b.  Problems that tell you find the largest substring with some property (Use Suffix links)
-    c.  Remember suffix links are the same as aho corasic failure links (you can memoize them with dp)
-    d.  Problems that ask you to get the k-th string (can be either suffix automaton or array)
-    e.  Longest Common Substring is mostly a (suffix automaton-array) thing
+    a.  Longest Common Substring is easier with suffix automaton 
+    b.  Problems that tell you cound stuff that appears X times or count appearnces (Use suffixr links)
+    c.  Problems that tell you find the largest substring with some property (Use Suffix links)
+    d.  Remember suffix links are the same as aho corasic failure links (you can memoize them with dp)
+    e.  Problems that ask you to get the k-th string (can be either suffix automaton or array)
+    f.  Longest Common Prefix is mostly a (suffix automaton-array) thing
 
 6. Data Structures
     a.  Problems that ask you to count the numbers v where (X <= v <= Y) can be solved with (MO-SquareRoot-PersistentSegTree-Wavelet)
     b.  
-
 7. Trees
     a. For problems that ask you to count stuff in a substree think (Euler Tour with RQ - Small to Large - DSU on Trees - PersistentSegTree)
     b. For Path Problems think (Centroid Decomposition - HLD)
     c. For a path think (HLD + Euler Tour)
     d. Note that the farthest node to any node in the tree is one of the two diameter heads
     e. In case of asking F(node, x) for each node it's probably DP on Trees
-
 8. Flows
     a. If you want to make a K-covering instead of consdirign lit edges consider non-lit edges
