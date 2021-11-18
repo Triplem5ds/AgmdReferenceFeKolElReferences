@@ -8,6 +8,8 @@ Notes:
     6. Check datatypes (if you are getting WA or TLE or RTE)
     7. in case of merging between sets (i.e i + j or sth) think bitset first
     8. If you have a TLE soln using bitset might help
+    9. If everything else fails think Brute force or randomization
+    10. If you have a solution and you think it's wrong write it instead of doing nothing
 1. Assignment Problems:
     a. If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
     b. If you see a problem that tells for some X choose a Y (think flows)
