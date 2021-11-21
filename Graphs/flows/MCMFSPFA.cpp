@@ -3,7 +3,6 @@
 		make sure you notice the #define int ll
 		focus on the data types of the max flow everythign inside is integer
 		addEdge(u,v,cap,cost)
-		minCostFlow(int source, int dest, int maxflow), maxflow is to bind that no flow is more than this flow
 		note that for min cost max flow the cost is sum of cost * flow over all edges
 */
 struct Edge {
