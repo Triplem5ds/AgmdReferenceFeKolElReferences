@@ -1,6 +1,7 @@
 /*
     Properties:
-        1. LCA(a,b) is equal to LCA(a,b) in the centroid tree
+        1. consider path(a,b) can be decomposed to path(a,lca(a,b)) and path(b,lca(a,b))
+        where lca(a,b) is the lca on the centroid tree
         2. Each one of the n² paths is the concatenation of two paths in a set of O(n lg(n)) 
         paths from a node to all its ancestors in the centroid decomposition.
         3. Ancestor of a node in the original tree is either an ancestor in the CD tree or
