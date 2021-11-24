@@ -1,66 +1,33 @@
-// Source: RR
-// Tested with VOJ - MCQUERY
-
-/*
- * Find min cut between every pair of vertices using N max_flow call (instead of N^2)
- * Not tested with directed graph
- * Index start from 0
+/**
+ * Author: chilli, Takanori MAEHARA
+ * Date: 2020-04-03
+ * License: CC0
+ * Source: https://github.com/spaghetti-source/algorithm/blob/master/graph/gomory_hu_tree.cc#L102
+ * Description: Given a list of edges representing an undirected flow graph,
+ * returns edges of the Gomory-Hu tree. The max flow between any pair of
+ * vertices is given by minimum edge weight along the Gomory-Hu tree path.
+ * Time: $O(V)$ Flow Computations
+ * Status: Tested on CERC 2015 J, stress-tested
+ *
+ * Details: The implementation used here is not actually the original
+ * Gomory-Hu, but Gusfield's simplified version: "Very simple methods for all
+ * pairs network flow analysis". PushRelabel is used here, but any flow
+ * implementation that supports `leftOfMinCut` also works.
  */
-struct GomoryHu {
-    int ok[MN], cap[MN][MN];
-    int answer[MN][MN], parent[MN];
-    int n;
-    MaxFlow flow;
+#pragma once
 
-    GomoryHu(int n) : n(n), flow(n) {
-        for(int i = 0; i < n; ++i) ok[i] = parent[i] = 0;
-        for(int i = 0; i < n; ++i)
-            for(int j = 0; j < n; ++j)
-                cap[i][j] = 0, answer[i][j] = INF;
-    }
+#include "PushRelabel.h"
 
-    void addEdge(int u, int v, int c) {
-        cap[u][v] += c;
-    }
-
-    void calc() {
-        for(int i = 0; i < n; ++i) parent[i]=0;
-        for(int i = 0; i < n; ++i)
-            for(int j = 0; j < n; ++j)
-                answer[i][j]=2000111000;
-
-        for(int i = 1; i <= n-1; ++i) {
-            flow = MaxFlow(n);
-            REP(u,n) REP(v,n)
-                if (cap[u][v])
-                    flow.addEdge(u, v, cap[u][v]);
-
-            int f = flow.getMaxFlow(i, parent[i]);
-
-            bfs(i);
-            for(int j = i+1; j < n; ++j)
-                if (ok[j] && parent[j]==parent[i])
-                    parent[j]=i;
-            
-            answer[i][parent[i]] = answer[parent[i]][i] = f;
-            for(int j = 0; j < i; ++j)
-                answer[i][j]=answer[j][i]=min(f,answer[parent[i]][j]);
-        }
-    }
-    void bfs(int start) {
-        memset(ok,0,sizeof ok);
-        queue<int> qu;
-        qu.push(start);
-        while (!qu.empty()) {
-            int u=qu.front(); qu.pop();
-            for(int xid = 0; xid < flow.g[u].size(); ++xid) {
-                int id = flow.g[u][xid];
-                int v = flow.e[id].b, fl = flow.e[id].flow, cap = flow.e[id].cap;
-                if (!ok[v] && fl < cap) {
-                    ok[v]=1;
-                    qu.push(v);
-                }
-            }
-        }
-    }
-};
+typedef array<ll, 3> Edge;
+vector<Edge> gomoryHu(int N, vector<Edge> ed) {
+	vector<Edge> tree;
+	vi par(N);
+	rep(i,1,N) {
+		PushRelabel D(N); // Dinic also works
+		for (Edge t : ed) D.addEdge(t[0], t[1], t[2], t[2]);
+		tree.push_back({i, par[i], D.calc(i, par[i])});
+		rep(j,i+1,N)
+			if (par[j] == par[i] && D.leftOfMinCut(j)) par[j] = i;
+	}
+	return tree;
+}
