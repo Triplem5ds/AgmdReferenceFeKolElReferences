@@ -1,114 +1,61 @@
-struct edge
-{
-	int from, to, cap, flow, index;
-	edge(int from, int to, int cap, int flow, int index):
-		from(from), to(to), cap(cap), flow(flow), index(index) {}
-};
- 
-struct PushRelabel
-{
-	int n;
-	vector<vector<edge> > g;
-	vector<long long> excess;
-	vector<int> height, active, count;
-	queue<int> Q;
- 
-	PushRelabel(int n):
-		n(n), g(n), excess(n), height(n), active(n), count(2*n) {}
- 
-	void addEdge(int from, int to, int cap)
-	{
-		g[from].push_back(edge(from, to, cap, 0, g[to].size()));
-		if(from==to)
-			g[from].back().index++;
-		g[to].push_back(edge(to, from, 0, 0, g[from].size()-1));
+/**
+ * Author: Simon Lindholm
+ * Date: 2015-02-24
+ * License: CC0
+ * Source: Wikipedia, tinyKACTL
+ * Description: Push-relabel using the highest label selection rule and the gap heuristic. Quite fast in practice.
+ *  To obtain the actual flow, look at positive values only.
+ * Time: $O(V^2\sqrt E)$
+ * Status: Tested on Kattis and SPOJ, and stress-tested
+ */
+#pragma once
+
+
+struct PushRelabel {
+	struct Edge {
+		int dest, back;
+		ll f, c;
+	};
+	vector<vector<Edge>> g;
+	vector<ll> ec;
+	vector<Edge*> cur;
+	vector<vi> hs; vi H;
+	PushRelabel(int n) : g(n), ec(n), cur(n), hs(2*n), H(n) {}
+
+	void addEdge(int s, int t, ll cap, ll rcap=0) {
+		if (s == t) return;
+		g[s].push_back({t, sz(g[t]), 0, cap});
+		g[t].push_back({s, sz(g[s])-1, 0, rcap});
 	}
- 
-	void enqueue(int v)
-	{
-		if(!active[v] && excess[v] > 0)
-		{
-			active[v]=true;
-			Q.push(v);
+
+	void addFlow(Edge& e, ll f) {
+		Edge &back = g[e.dest][e.back];
+		if (!ec[e.dest] && f) hs[H[e.dest]].push_back(e.dest);
+		e.f += f; e.c -= f; ec[e.dest] += f;
+		back.f -= f; back.c += f; ec[back.dest] -= f;
+	}
+	ll calc(int s, int t) {
+		int v = sz(g); H[s] = v; ec[t] = 1;
+		vi co(2*v); co[0] = v-1;
+		rep(i,0,v) cur[i] = g[i].data();
+		for (Edge& e : g[s]) addFlow(e, e.c);
+
+		for (int hi = 0;;) {
+			while (hs[hi].empty()) if (!hi--) return -ec[s];
+			int u = hs[hi].back(); hs[hi].pop_back();
+			while (ec[u] > 0)  // discharge u
+				if (cur[u] == g[u].data() + sz(g[u])) {
+					H[u] = 1e9;
+					for (Edge& e : g[u]) if (e.c && H[u] > H[e.dest]+1)
+						H[u] = H[e.dest]+1, cur[u] = &e;
+					if (++co[H[u]], !--co[hi] && hi < v)
+						rep(i,0,v) if (hi < H[i] && H[i] < v)
+							--co[H[i]], H[i] = v + 1;
+					hi = H[u];
+				} else if (cur[u]->c && H[u] == H[cur[u]->dest]+1)
+					addFlow(*cur[u], min(ec[u], cur[u]->c));
+				else ++cur[u];
 		}
 	}
- 
-	void push(edge &e)
-	{
-		int amt=(int)min(excess[e.from], (long long)e.cap - e.flow);
-		if(height[e.from]<=height[e.to] || amt==0)
-			return;
-		e.flow += amt;
-		g[e.to][e.index].flow -= amt;
-		excess[e.to] += amt;
-		excess[e.from] -= amt;
-		enqueue(e.to);
-	}
- 
-	void relabel(int v)
-	{
-		count[height[v]]--;
-		int d=2*n;
-		for(auto &it:g[v])
-		{
-			if(it.cap-it.flow>0)
-				d=min(d, height[it.to]+1);
-		}
-		height[v]=d;
-		count[height[v]]++;
-		enqueue(v);
-	}
- 
-	void gap(int k)
-	{
-		for(int v=0;v<n;v++)
-		{
-			if(height[v]<k)
-				continue;
-			count[height[v]]--;
-			height[v]=max(height[v], n+1);
-			count[height[v]]++;
-			enqueue(v);
-		}
-	}
- 
-	void discharge(int v)
-	{
-		for(int i=0; excess[v]>0 && i<g[v].size(); i++)
-			push(g[v][i]);
-		if(excess[v]>0)
-		{
-			if(count[height[v]]==1)
-				gap(height[v]);
-			else
-				relabel(v);
-		}
-	}
- 
-	long long max_flow(int source, int dest)
-	{
-		count[0] = n-1;
-		count[n] = 1;
-		height[source] = n;
-		active[source] = active[dest] = 1;
-		for(auto &it:g[source])
-		{
-			excess[source]+=it.cap;
-			push(it);
-		}
- 
-		while(!Q.empty())
-		{
-			int v=Q.front();
-			Q.pop();
-			active[v]=false;
-			discharge(v);
-		}
- 
-		long long max_flow=0;
-		for(auto &e:g[source])
-			max_flow+=e.flow;
- 
-		return max_flow;
-	}
+	bool leftOfMinCut(int a) { return H[a] >= sz(g); }
 };
