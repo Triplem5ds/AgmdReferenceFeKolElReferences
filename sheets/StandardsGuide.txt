@@ -47,3 +47,4 @@ Notes:
     c. If the problem asks you to choose some stuff the minimizes use Min Cut (If maximizes sum up stuff and subtract min cut)
 9. Geometry
     a. In case of a set of points try scaling and translation
+    b. Manhattan to King distance (x,y) -> (x+y, x-y)
