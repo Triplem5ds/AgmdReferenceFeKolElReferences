@@ -1,99 +1,99 @@
 \contentsline {section}{\numberline {1}Combinatorics}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Burnside Lemma}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Catlan Numbers}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Algebra}{1}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Primitive Roots}{1}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Discrete Logarithm}{1}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Iteration over submasks}{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Totient function}{2}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}CRT and EEGCD}{2}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}FFT}{2}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Fibonacci}{3}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Gauss Determinant}{3}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}GAUSS SLAE}{3}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Matrix Inverse}{3}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}NTT}{4}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}NTT of KACTL}{4}{subsection.2.12}%
-\contentsline {section}{\numberline {3}Data Structures}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}2D BIT}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}2D Sparse table}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}hillbert Order}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Merge Sort Bit with updates}{6}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Mo's}{6}{subsection.3.5}%
+\contentsline {subsection}{\numberline {1.2}Catlan Numbers}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Algebra}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Primitive Roots}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Discrete Logarithm}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Iteration over submasks}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Totient function}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}CRT and EEGCD}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}FFT}{3}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Fibonacci}{4}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Gauss Determinant}{4}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}GAUSS SLAE}{4}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Matrix Inverse}{4}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}NTT}{5}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}NTT of KACTL}{5}{subsection.2.12}%
+\contentsline {section}{\numberline {3}Data Structures}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}2D BIT}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}2D Sparse table}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}hillbert Order}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Merge Sort Bit with updates}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Mo's}{7}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Mo With Updates}{7}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Ordered Set}{7}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Persistent Seg Tree}{7}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Sqrt Decomposition}{8}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Treap}{8}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.7}Ordered Set}{8}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Persistent Seg Tree}{8}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Sqrt Decomposition}{9}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Treap}{9}{subsection.3.10}%
 \contentsline {subsection}{\numberline {3.11}Wavelet Tree}{9}{subsection.3.11}%
-\contentsline {section}{\numberline {4}DP}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Dynamic Convex Hull Trick}{9}{subsection.4.1}%
+\contentsline {section}{\numberline {4}DP}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Dynamic Convex Hull Trick}{10}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Dynamic Connectivety with SegTree}{10}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Li Chao Tree}{11}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}CHT Line Container}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}CHT Line Container}{12}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Geometry}{12}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Convex Hull}{12}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Geometry Template}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Half Plane Intersection}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.2}Geometry Template}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Half Plane Intersection}{14}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Segments Intersection}{14}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Rectangles Union}{14}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Graphs}{15}{section.6}%
-\contentsline {subsection}{\numberline {6.1}2 SAD}{15}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Ariculation Point}{16}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Bridges Tree and Diameter}{16}{subsection.6.3}%
+\contentsline {subsection}{\numberline {5.5}Rectangles Union}{15}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Graphs}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}2 SAD}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Ariculation Point}{17}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Bridges Tree and Diameter}{17}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Dinic With Scalling}{17}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Gomory Hu}{17}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}HopcraftKarp BPM}{17}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Hungarian}{18}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Kosaraju}{18}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}Krichoff}{18}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}Manhattan MST}{19}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}Maximum Clique}{19}{subsection.6.11}%
-\contentsline {subsection}{\numberline {6.12}MCMF}{20}{subsection.6.12}%
-\contentsline {subsection}{\numberline {6.13}Minimum Arbroscene in a Graph}{20}{subsection.6.13}%
-\contentsline {subsection}{\numberline {6.14}Minmimum Vertex Cover (Bipartite)}{21}{subsection.6.14}%
-\contentsline {subsection}{\numberline {6.15}Prufer Code}{21}{subsection.6.15}%
-\contentsline {subsection}{\numberline {6.16}Push Relabel Max Flow}{22}{subsection.6.16}%
-\contentsline {subsection}{\numberline {6.17}Tarjan Algo}{23}{subsection.6.17}%
-\contentsline {subsection}{\numberline {6.18}Bipartite Matching}{23}{subsection.6.18}%
-\contentsline {section}{\numberline {7}Math}{24}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Xor With Gauss}{24}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Josephus}{24}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Matrix Power/Multiplication}{24}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Rabin Miller Primality check}{24}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Strings}{25}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Aho-Corasick Mostafa}{25}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Aho-Corasick Anany}{25}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}KMP Anany}{26}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Manacher Kactl}{26}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Suffix Array Kactl}{26}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Suffix Automaton Anany}{26}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Suffix Automaton Mostafa}{27}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Suffix Automaton With Rollback Mostafa}{27}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Zalgo Anany}{28}{subsection.8.9}%
-\contentsline {section}{\numberline {9}Trees}{28}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Centroid Decomposition}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {6.5}Gomory Hu}{18}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}HopcraftKarp BPM}{18}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Hungarian}{19}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Kosaraju}{19}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Krichoff}{19}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.10}Manhattan MST}{20}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.11}Maximum Clique}{20}{subsection.6.11}%
+\contentsline {subsection}{\numberline {6.12}MCMF}{21}{subsection.6.12}%
+\contentsline {subsection}{\numberline {6.13}Minimum Arbroscene in a Graph}{21}{subsection.6.13}%
+\contentsline {subsection}{\numberline {6.14}Minmimum Vertex Cover (Bipartite)}{22}{subsection.6.14}%
+\contentsline {subsection}{\numberline {6.15}Prufer Code}{22}{subsection.6.15}%
+\contentsline {subsection}{\numberline {6.16}Push Relabel Max Flow}{23}{subsection.6.16}%
+\contentsline {subsection}{\numberline {6.17}Tarjan Algo}{24}{subsection.6.17}%
+\contentsline {subsection}{\numberline {6.18}Bipartite Matching}{24}{subsection.6.18}%
+\contentsline {section}{\numberline {7}Math}{25}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Xor With Gauss}{25}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Josephus}{25}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Matrix Power/Multiplication}{25}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Rabin Miller Primality check}{25}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Strings}{26}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Aho-Corasick Mostafa}{26}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Aho-Corasick Anany}{26}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}KMP Anany}{27}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Manacher Kactl}{27}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Suffix Array Kactl}{27}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Suffix Automaton Anany}{27}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Suffix Automaton Mostafa}{28}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Suffix Automaton With Rollback Mostafa}{28}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Zalgo Anany}{29}{subsection.8.9}%
+\contentsline {section}{\numberline {9}Trees}{29}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Centroid Decomposition}{29}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Dsu On Trees}{29}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Heavy Light Decomposition (Along with Euler Tour)}{29}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}LCA}{29}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Mo on Trees}{30}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Numerical}{30}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Lagrange Polynomial}{30}{subsection.10.1}%
-\contentsline {section}{\numberline {11}Guide}{31}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Notes}{31}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Assignment Problems}{31}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}XOR problems}{31}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Subset Problems}{31}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Decompositions}{31}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Strings}{31}{subsection.11.6}%
+\contentsline {subsection}{\numberline {9.3}Heavy Light Decomposition (Along with Euler Tour)}{30}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}LCA}{30}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Mo on Trees}{31}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Numerical}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Lagrange Polynomial}{31}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Guide}{32}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Notes}{32}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Assignment Problems}{32}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}XOR problems}{32}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Subset Problems}{32}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Decompositions}{32}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Strings}{32}{subsection.11.6}%
 \contentsline {subsection}{\numberline {11.7}Data Structures}{32}{subsection.11.7}%
-\contentsline {subsection}{\numberline {11.8}Trees}{32}{subsection.11.8}%
-\contentsline {subsection}{\numberline {11.9}Flows}{32}{subsection.11.9}%
-\contentsline {subsection}{\numberline {11.10}Geometry}{32}{subsection.11.10}%
-\contentsline {subsection}{\numberline {11.11}Area}{32}{subsection.11.11}%
-\contentsline {subsection}{\numberline {11.12}Volume}{32}{subsection.11.12}%
-\contentsline {subsection}{\numberline {11.13}Combinatorics}{33}{subsection.11.13}%
-\contentsline {subsection}{\numberline {11.14}Graph Theory}{33}{subsection.11.14}%
-\contentsline {subsection}{\numberline {11.15}Max flow with lower bound}{33}{subsection.11.15}%
-\contentsline {subsection}{\numberline {11.16}Sum of floor function}{33}{subsection.11.16}%
-\contentsline {subsection}{\numberline {11.17}Joseph problem}{33}{subsection.11.17}%
+\contentsline {subsection}{\numberline {11.8}Trees}{33}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Flows}{33}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Geometry}{33}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Area}{33}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Volume}{33}{subsection.11.12}%
+\contentsline {subsection}{\numberline {11.13}Combinatorics}{34}{subsection.11.13}%
+\contentsline {subsection}{\numberline {11.14}Graph Theory}{34}{subsection.11.14}%
+\contentsline {subsection}{\numberline {11.15}Max flow with lower bound}{34}{subsection.11.15}%
+\contentsline {subsection}{\numberline {11.16}Sum of floor function}{34}{subsection.11.16}%
+\contentsline {subsection}{\numberline {11.17}Joseph problem}{34}{subsection.11.17}%
