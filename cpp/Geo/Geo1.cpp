@@ -111,4 +111,4 @@ point circumcircle(point p1, point p2, point p3) {
 //S : Area.
 //I : number points with integer coordinates lying strictly inside the polygon.
 //B : number of points lying on polygon sides by B.
-//S = I + B/2 −1
+//S = I + B/2 - 1

@@ -32,7 +32,30 @@ DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
 DP/LiChaoTreeWithPointers.cpp	Li Chao Tree
 DP/LineContainer.cpp	CHT Line Container
 [Geometry]
+Geo/convex_hull.cpp	Convex Hull
+Geo/Geo1.cpp	Geometry Template
+Geo/Half-plane_intersection.cpp	Half Plane Intersection
+Geo/Intersecting_Segments.cpp	Segments Intersection
+Geo/UnionArea_Of_Rectangles.cpp	Rectangles Union
 [Graphs]
+Graphs/2sat.cpp	2 SAD
+Graphs/ArticulationPoint.cpp	Ariculation Point
+Graphs/BridgesTree_TreeDiameter.cpp	Bridges Tree and Diameter
+Graphs/DinicWithScalling.cpp	Dinic With Scalling
+Graphs/GomoryHu.cpp	Gomory Hu
+Graphs/HopcraftKarp.cpp	HopcraftKarp BPM
+Graphs/Hungarian.cpp	Hungarian
+Graphs/Kosaraju.cpp	Kosaraju
+Graphs/Krichoff'sTheroem.cpp	Krichoff
+Graphs/ManhattanMST.cpp	Manhattan MST
+Graphs/MaxCliqueFinding.cpp	Maximum Clique
+Graphs/MCMFSPFA.cpp	MCMF
+Graphs/MinimumArbroscene.cpp	Minimum Arbroscene in a Graph
+Graphs/MinimumVertexCover.cpp	Minmimum Vertex Cover (Bipartite)
+Graphs/prufer_code.cpp	Prufer Code
+Graphs/PushRelabel.cpp	Push Relabel Max Flow
+Graphs/Tarjan.cpp	Tarjan Algo
+Graphs/BPM.cpp	Bipartite Matching
 [Math]
 Math/GaussianXor.cpp	Xor With Gauss
 Math/JosephusProblem.cpp	Josephus
