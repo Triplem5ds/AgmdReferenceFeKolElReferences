@@ -1,12 +1,24 @@
 \contentsline {section}{\numberline {1}Combinatorics}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Burnside Lemma}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Catlan Numbers}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Max Flow}{1}{section.2}%
-\contentsline {section}{\numberline {3}Matching}{1}{section.3}%
-\contentsline {section}{\numberline {4}Trees}{1}{section.4}%
-\contentsline {section}{\numberline {5}Strings}{1}{section.5}%
-\contentsline {section}{\numberline {6}Geometry}{1}{section.6}%
-\contentsline {section}{\numberline {7}Number Theory}{1}{section.7}%
-\contentsline {section}{\numberline {8}Algebra}{1}{section.8}%
-\contentsline {section}{\numberline {9}DP}{1}{section.9}%
-\contentsline {section}{\numberline {10}Misc.}{1}{section.10}%
+\contentsline {section}{\numberline {2}Algebra}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Primitive Roots}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Discrete Logarithm}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Iteration over submasks}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Totient function}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}CRT and EEGCD}{2}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}FFT}{2}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Fibonacci}{3}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Gauss Determinant}{3}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}GAUSS SLAE}{3}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Matrix Inverse}{3}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}NTT}{4}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}NTT of KACTL}{4}{subsection.2.12}%
+\contentsline {section}{\numberline {3}Max Flow}{5}{section.3}%
+\contentsline {section}{\numberline {4}Matching}{5}{section.4}%
+\contentsline {section}{\numberline {5}Trees}{5}{section.5}%
+\contentsline {section}{\numberline {6}Strings}{5}{section.6}%
+\contentsline {section}{\numberline {7}Geometry}{5}{section.7}%
+\contentsline {section}{\numberline {8}Number Theory}{5}{section.8}%
+\contentsline {section}{\numberline {9}DP}{5}{section.9}%
+\contentsline {section}{\numberline {10}Misc.}{5}{section.10}%

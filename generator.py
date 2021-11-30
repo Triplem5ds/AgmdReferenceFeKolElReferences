@@ -24,6 +24,7 @@ def get_sections(path):
                     sections.append((section_name, subsections))
             else:
                 tmp = line.split('\t', 1)
+                print(tmp, '--------------', len(tmp))
                 if len(tmp) == 1:
                     raise ValueError('Subsection parse error: %s' % line)
                 filename = path + '/' + tmp[0] # Should use os.path.join but it breaks LaTeX with backslashes
