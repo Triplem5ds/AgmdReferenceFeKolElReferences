@@ -14,7 +14,18 @@ Algebra/GaussSystemOfLinearEquations.cpp	GAUSS SLAE
 Algebra/MatrixInverse.cpp	Matrix Inverse
 Algebra/NTT.cpp	NTT
 Algebra/NTT_KACTL.cpp	NTT of KACTL
-[Max Flow]
+[Data Structures]
+DataStructures/2DBIT.cpp	2D BIT
+DataStructures/2DSparseTable.cpp	2D Sparse table
+DataStructures/hillbertOrder.cpp	hillbert Order
+DataStructures/MergeSortBitWithUpdates.cpp	Merge Sort Bit with updates
+DataStructures/MO'sAlgorithm.cpp	Mo's
+DataStructures/MOwithUpdates.cpp	Mo With Updates
+DataStructures/ordered_set.cpp	Ordered Set
+DataStructures/PresistentSegTree.cpp	Persistent Seg Tree
+DataStructures/SQRT.cpp	Sqrt Decomposition
+DataStructures/treap.cpp	Treap
+DataStructures/Wavelet_tree.cpp	Wavelet Tree
 [Matching]
 [Trees]
 [Strings]
