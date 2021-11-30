@@ -1,6 +1,79 @@
-\section{formulas}
+\section{Guide}
+\subsection{Notes}
+\begin{itemize}
+\item Don't forget to solve the problem in reverse (i.e deleting->adding or adding->deleting, ...etc)
+\item Max flow is just choosing the maximum number of paths between source and sink
+\item If you have a problem that tells you choose a[i] or b[i] (or a range) choose one of them initially and play a take or leave on the other
+\item If the problem tells you to do something cyclic solving it for x + x
+\item Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
+\item Check datatypes (if you are getting WA or TLE or RTE)
+\item in case of merging between sets try bitsets (i.e i + j or sth)
+\item If you have a TLE soln using bitset might help
+\item If everything else fails think Brute force or randomization
+\item If you have a solution and you think it's wrong write it instead of doing nothing
+\end{itemize}
+\hrulefill
+\subsection{Assignment Problems}
+\begin{itemize}
+\item If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
+\item If you see a problem that tells for some X choose a Y (think flows)
+\item If the problem tells you to choose a Y from L->R (think range flow i.e putting edges between the same layer)
+\end{itemize}
+\hrulefill
+\subsection{XOR problems}
+\begin{itemize}
+\item If the problem tells your something about choosing an XOR of a subset (think FWHT or XOR-basis)
+\item If the problem tells you about getting XOR of a tree path let a[i] = XOR tree from root to i and solve this as an array
+\item If the problem tells you range XOR sth it's better to have prefix XOR and make it pairs XOR.
+\end{itemize}
+\hrulefill
+\subsection{Subset Problems}
+\begin{itemize}
+\item Problems that tells you what is the number of ways to choose X out of N that has some property (think convolution)
+\end{itemize}
+\hrulefill
+\subsection{Decompositions}
+\begin{itemize}
+\item If a problem is a asking you to calculate the answer after K steps you can calculate the answer for K%squareRoot and for K/SquareRoot
+\item If the nubmer of queries is significintly larger than updates or vice versa you can use square root Decompositions to give advantage to one over the other
+\end{itemize}
+\hrulefill
+\subsection{Strings}
+\begin{itemize}
+\item Longest Common Substring is easier with suffix automaton 
+\item Problems that tell you cound stuff that appears X times or count appearnces (Use suffixr links)
+\item Problems that tell you find the largest substring with some property (Use Suffix links)
+\item Remember suffix links are the same as aho corasic failure links (you can memoize them with dp)
+\item Problems that ask you to get the k-th string (can be either suffix automaton or array)
+\item Longest Common Prefix is mostly a (suffix automaton-array) thing
+\item try thinking bitsets
+\end{itemize}
+\hrulefill
+\subsection{Data Structures}
+\begin{itemize}
+\item Problems that ask you to count the numbers v where (X <= v <= Y) can be solved with (MO-SquareRoot-PersistentSegTree-Wavelet)
+\end{itemize}
+\hrulefill 
+\subsection{Trees}
+\begin{itemize}
+\item For problems that ask you to count stuff in a substree think (Euler Tour with RQ - Small to Large - DSU on Trees - PersistentSegTree)
+\item For Path Problems think (Centroid Decomposition - HLD)
+\item For a path think (HLD + Euler Tour)
+\item Note that the farthest node to any node in the tree is one of the two diameter heads
+\item In case of asking F(node, x) for each node it's probably DP on Trees
+\end{itemize}
+\hrulefill 
+\subsection{Flows}
+\begin{itemize}
+\item If you want to make a K-covering instead of consdirign lit edges consider non-lit edges
+\item To get mincost while mainting a flow network (note that flows are batched together according to cost)
+\item If the problem asks you to choose some stuff the minimizes use Min Cut (If maximizes sum up stuff and subtract min cut)
+\end{itemize}
+\hrulefill 
 \subsection{Geometry}
 \begin{itemize}
+\item In case of a set of points try scaling and translation
+\item Manhattan to King distance (x,y) -> (x+y, x-y)
 \item Lattice points on line: gcd(dx,dy) + 1
 \item Pick's theorem: $A = I + \frac{B}{2} - 1$
 \item sine rule: $\frac{A}{sin(a)} = \frac{B}{sin(b)} = \frac{C}{sin(c)}$
