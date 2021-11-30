@@ -26,10 +26,31 @@ DataStructures/PresistentSegTree.cpp	Persistent Seg Tree
 DataStructures/SQRT.cpp	Sqrt Decomposition
 DataStructures/treap.cpp	Treap
 DataStructures/Wavelet_tree.cpp	Wavelet Tree
-[Matching]
-[Trees]
-[Strings]
+[DP]
+DP/DCHT.cpp	Dynamic Convex Hull Trick
+DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
+DP/LiChaoTreeWithPointers.cpp	Li Chao Tree
+DP/LineContainer.cpp	CHT Line Container
 [Geometry]
-[Number Theory]
-[DP] 
-[Misc.]
+[Graphs]
+[Math]
+Math/GaussianXor.cpp	Xor With Gauss
+Math/JosephusProblem.cpp	Josephus
+Math/Matrix.cpp	Matrix Power/Multiplication
+Math/rabinMiller.cpp	Rabin Miller Primality check
+[Strings]
+Strings/ACA.cpp	Aho-Corasick Mostafa
+Strings/ACA2.cpp	Aho-Corasick Anany
+Strings/KMP.cpp	KMP Anany
+Strings/Manacher's.cpp	Manacher Kactl
+Strings/SuffixArray.cpp	Suffix Array Kactl
+Strings/SuffixAutomaton.cpp	Suffix Automaton Anany
+Strings/SuffixAutomaton2.cpp	Suffix Automaton Mostafa
+Strings/SuffixAutomaton_WithRollback.cpp	Suffix Automaton With Rollback Mostafa
+Strings/Zalgo.cpp	Zalgo Anany
+[Trees]
+trees/CentroidDecomposition.cpp	Centroid Decomposition
+trees/DSUonTree.cpp	Dsu On Trees
+trees/HLD.cpp	Heavy Light Decomposition (Along with Euler Tour)
+trees/LCAQuery.cpp	LCA
+trees/TreesMo.cpp	Mo on Trees
