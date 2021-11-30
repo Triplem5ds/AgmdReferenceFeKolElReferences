@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.12}NTT of KACTL}{5}{subsection.2.12}%
 \contentsline {section}{\numberline {3}Data Structures}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}2D BIT}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}2D Sparse table}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}2D Sparse table}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}hillbert Order}{6}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Merge Sort Bit with updates}{7}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Mo's}{7}{subsection.3.5}%
@@ -77,3 +77,5 @@
 \contentsline {subsection}{\numberline {9.3}Heavy Light Decomposition (Along with Euler Tour)}{30}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.4}LCA}{30}{subsection.9.4}%
 \contentsline {subsection}{\numberline {9.5}Mo on Trees}{30}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Numerical}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Lagrange Polynomial}{31}{subsection.10.1}%

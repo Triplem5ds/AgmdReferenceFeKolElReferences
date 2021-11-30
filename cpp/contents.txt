@@ -77,3 +77,5 @@ trees/DSUonTree.cpp	Dsu On Trees
 trees/HLD.cpp	Heavy Light Decomposition (Along with Euler Tour)
 trees/LCAQuery.cpp	LCA
 trees/TreesMo.cpp	Mo on Trees
+[Numerical]
+Numerical/Lagrange.cpp	Lagrange Polynomial
