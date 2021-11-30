@@ -3,22 +3,33 @@
 \contentsline {subsection}{\numberline {1.2}Catlan Numbers}{1}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Algebra}{1}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Primitive Roots}{1}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Discrete Logarithm}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Discrete Logarithm}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Iteration over submasks}{2}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Totient function}{2}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}CRT and EEGCD}{2}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}FFT}{2}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}FFT}{3}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Fibonacci}{3}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Gauss Determinant}{3}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}GAUSS SLAE}{3}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Matrix Inverse}{3}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.10}Matrix Inverse}{4}{subsection.2.10}%
 \contentsline {subsection}{\numberline {2.11}NTT}{4}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}NTT of KACTL}{4}{subsection.2.12}%
-\contentsline {section}{\numberline {3}Max Flow}{5}{section.3}%
-\contentsline {section}{\numberline {4}Matching}{5}{section.4}%
-\contentsline {section}{\numberline {5}Trees}{5}{section.5}%
-\contentsline {section}{\numberline {6}Strings}{5}{section.6}%
-\contentsline {section}{\numberline {7}Geometry}{5}{section.7}%
-\contentsline {section}{\numberline {8}Number Theory}{5}{section.8}%
-\contentsline {section}{\numberline {9}DP}{5}{section.9}%
-\contentsline {section}{\numberline {10}Misc.}{5}{section.10}%
+\contentsline {subsection}{\numberline {2.12}NTT of KACTL}{5}{subsection.2.12}%
+\contentsline {section}{\numberline {3}Data Structures}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}2D BIT}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}2D Sparse table}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}hillbert Order}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Merge Sort Bit with updates}{6}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Mo's}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Mo With Updates}{7}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Ordered Set}{8}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Persistent Seg Tree}{8}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Sqrt Decomposition}{8}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Treap}{8}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Wavelet Tree}{9}{subsection.3.11}%
+\contentsline {section}{\numberline {4}Matching}{10}{section.4}%
+\contentsline {section}{\numberline {5}Trees}{10}{section.5}%
+\contentsline {section}{\numberline {6}Strings}{10}{section.6}%
+\contentsline {section}{\numberline {7}Geometry}{10}{section.7}%
+\contentsline {section}{\numberline {8}Number Theory}{10}{section.8}%
+\contentsline {section}{\numberline {9}DP}{10}{section.9}%
+\contentsline {section}{\numberline {10}Misc.}{10}{section.10}%
