@@ -8,6 +8,7 @@ Algebra/Enumerating_all_submasks_of_a_given_mask.cpp	Iteration over submasks
 Algebra/Euler's_totient_function.cpp	Totient function
 Algebra/Extended+GCD+CRT.cpp	CRT and EEGCD
 Algebra/FFT.cpp	FFT
+Algebra/FFTMOD.cpp	FFTMOD
 Algebra/FibonacciNumbers.cpp	Fibonacci
 Algebra/GaussDeterminant.cpp	Gauss Determinant
 Algebra/GaussSystemOfLinearEquations.cpp	GAUSS SLAE

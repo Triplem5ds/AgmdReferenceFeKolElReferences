@@ -42,6 +42,7 @@ vd conv(const vd& a, const vd& b) {
     for (C& x : in) x *= x;
     rep(i, 0, n) out[i] = in[-i & (n - 1)] - conj(in[i]);
     fft(out);
+    ///	rep(i,0,sz(res)) res[i] = (MOD+(ll)round(imag(out[i]) / (4 * n))) % MOD;    ///in case of mod
     rep(i, 0, sz(res)) res[i] = imag(out[i]) / (4 * n);
     return res;
 }
