@@ -1,3 +1,5 @@
+
+mt19937_64 mrand(chrono::steady_clock::now().time_since_epoch().count());
 struct Node {
     int key, pri = mrand(), sz = 1;
     int lz = 0;
