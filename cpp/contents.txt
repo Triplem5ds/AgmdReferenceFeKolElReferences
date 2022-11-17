@@ -2,8 +2,11 @@
 Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
 Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
 [Algebra]
+Algebra/GrayCode.cpp	Gray Code
 Algebra/PrimitiveRoots.cpp	Primitive Roots
-Algebra/DiscreteLogarithm.cpp	Discrete Logarithm
+Algebra/DiscreteLogarithm.cpp	Discrete Logarithm (min a^x=b%m)
+Algebra/DiscreteRoot.cpp	Discrete Root (given n, a and k find all x^k=a%n)
+Algebra/FactorialMod.cpp	Factorial modulo in plogn (Wilson Theroem)
 Algebra/Enumerating_all_submasks_of_a_given_mask.cpp	Iteration over submasks
 Algebra/Euler's_totient_function.cpp	Totient function
 Algebra/Extended+GCD+CRT.cpp	CRT and EEGCD
@@ -27,6 +30,7 @@ DataStructures/PresistentSegTree.cpp	Persistent Seg Tree
 DataStructures/SQRT.cpp	Sqrt Decomposition
 DataStructures/treap.cpp	Treap
 DataStructures/Wavelet_tree.cpp	Wavelet Tree
+DataStructures/SparseTable.cpp SparseTable
 [DP]
 DP/DCHT.cpp	Dynamic Convex Hull Trick
 DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
@@ -72,6 +76,7 @@ Strings/SuffixAutomaton.cpp	Suffix Automaton Anany
 Strings/SuffixAutomaton2.cpp	Suffix Automaton Mostafa
 Strings/SuffixAutomaton_WithRollback.cpp	Suffix Automaton With Rollback Mostafa
 Strings/Zalgo.cpp	Zalgo Anany
+Strings/minCycle.cpp	Minimum String Cycle
 [Trees]
 trees/CentroidDecomposition.cpp	Centroid Decomposition
 trees/DSUonTree.cpp	Dsu On Trees
