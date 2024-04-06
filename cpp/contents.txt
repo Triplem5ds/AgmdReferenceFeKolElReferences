@@ -30,7 +30,7 @@ DataStructures/PresistentSegTree.cpp	Persistent Seg Tree
 DataStructures/SQRT.cpp	Sqrt Decomposition
 DataStructures/treap.cpp	Treap
 DataStructures/Wavelet_tree.cpp	Wavelet Tree
-DataStructures/SparseTable.cpp SparseTable
+DataStructures/SparseTable.cpp	SparseTable
 [DP]
 DP/DCHT.cpp	Dynamic Convex Hull Trick
 DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
