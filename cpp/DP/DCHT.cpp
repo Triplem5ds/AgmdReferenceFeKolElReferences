@@ -1,11 +1,4 @@
-#include<iostream>
-#include <bits/stdc++.h>
-#define ll long long
-#define ld  long double
-#define IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-using namespace std;
-struct Line
-{
+struct Line{
     ll m, b;
     mutable function<const Line*()> succ;
     bool operator<(const Line& other) const
@@ -21,8 +14,7 @@ struct Line
     }
 };
 // will maintain upper hull for maximum
-struct HullDynamic : public multiset<Line, less<>>
-{
+struct HullDynamic : public multiset<Line, less<>>{
     bool bad(iterator y)
     {
         auto z = next(y);
@@ -59,8 +51,3 @@ struct HullDynamic : public multiset<Line, less<>>
         return l.m * x + l.b;
     }
 };
-int main()
-{
-    IO
-
-}
