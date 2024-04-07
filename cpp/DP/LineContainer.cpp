@@ -1,19 +1,14 @@
 struct Line {
     mutable ll m, b, p;
-    bool operator<(const Line &o) const {
-        return m < o.m;
-    }
-    bool operator<(ll x) const {
-        return p < x;
-    }
+    bool operator<(const Line &o) const { return m < o.m; }
+    bool operator<(ll x) const { return p < x; }
 };
 
 struct LineContainer : multiset<Line, less<>> {
     // (for doubles, use inf = 1/.0, div(a,b) = a/b)
     static const ll inf = LLONG_MAX;
 
-    ll div(ll db, ll dm)   // floored division
-    {
+    ll div(ll db, ll dm) { // floored division 
         return db / dm - ((db ^ dm) < 0 && db % dm);
     }
     bool isect(iterator x, iterator y) {

@@ -1,25 +1,18 @@
-// Sometimes, the questions are complicated - and the answers are simple. //
-#pragma GCC optimize ("O3")
-#pragma GCC optimize ("unroll-loops")
-#include <bits/stdc++.h>
-#define ll long long
-#define ld  long double
-#define IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-using namespace std;
-vector < vector<double> > gauss (vector < vector<double> > a) {
+#define ld long double
+vector < vector<ld> > gauss (vector < vector<ld> > a) {
 
     int n = (int) a.size();
-    vector<vector<double> > ans(n, vector<double>(n, 0));
+    vector<vector<ld> > ans(n, vector<ld>(n, 0));
 
     for(int i = 0; i < n; i++)
         ans[i][i] = 1;
     for(int i = 0; i < n; i++) {
         for(int j = i + 1; j < n; j++)
             if(a[j][i] > a[i][i]) {
-                swap(a[j], a[i]);
-                swap(ans[j], ans[i]);
+                a[j].swap(a[i]);
+                ans[j].swap(ans[i]);
             }
-        double val = a[i][i];
+        ld val = a[i][i];
         for(int j = 0; j < n; j++) {
             a[i][j] /= val;
             ans[i][j] /= val;
@@ -34,18 +27,4 @@ vector < vector<double> > gauss (vector < vector<double> > a) {
         }
     }
     return ans;
-}
-int main() {
-
-    IO
-    vector<vector<double> > v(3, vector<double> (3) );
-    for(int i = 0; i < 3; i++)
-        for(int j = 0; j < 3; j++)
-            cin >> v[i][j];
-
-    for(auto i : gauss(v)) {
-        for(auto j : i)
-            cout << j << " ";
-        cout << "\n";
-    }
 }

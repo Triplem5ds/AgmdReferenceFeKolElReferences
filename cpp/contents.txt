@@ -1,6 +1,7 @@
 [Combinatorics]
 Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
 Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
+Combinatorics/notes.cpp	Notes
 
 [Algebra]
 Algebra/GrayCode.cpp	Gray Code
@@ -16,7 +17,6 @@ Algebra/FibonacciNumbers.cpp	Fibonacci
 Algebra/GaussDeterminant.cpp	Gauss Determinant
 Algebra/GaussSystemOfLinearEquations.cpp	GAUSS SLAE
 Algebra/MatrixInverse.cpp	Matrix Inverse
-Algebra/NTT.cpp	NTT
 Algebra/NTT_KACTL.cpp	NTT of KACTL
 
 [Data Structures]
@@ -33,9 +33,7 @@ DataStructures/Wavelet_tree.cpp	Wavelet Tree
 DataStructures/SparseTable.cpp	SparseTable
 
 [DP]
-DP/DCHT.cpp	Dynamic Convex Hull Trick
 DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
-DP/LiChaoTreeWithPointers.cpp	Li Chao Tree
 DP/LineContainer.cpp	CHT Line Container
 
 [Geometry]
@@ -54,7 +52,6 @@ Graphs/GomoryHu.cpp	Gomory Hu
 Graphs/HopcraftKarp.cpp	HopcraftKarp BPM
 Graphs/Hungarian.cpp	Hungarian
 Graphs/Kosaraju.cpp	Kosaraju
-Graphs/Krichoff'sTheroem.cpp	Krichoff
 Graphs/ManhattanMST.cpp	Manhattan MST
 Graphs/MaxCliqueFinding.cpp	Maximum Clique
 Graphs/MCMFSPFA.cpp	MCMF

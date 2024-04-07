@@ -1,4 +1,4 @@
-int generator (int p) {
+int primitive_root (int p) {
     vector<int> fact;
     int phi = p - 1,  n = phi;
     for (int i = 2; i * i <= n; ++i)

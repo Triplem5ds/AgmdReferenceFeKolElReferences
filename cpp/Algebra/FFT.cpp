@@ -1,11 +1,3 @@
-#include<iostream>
-#include <bits/stdc++.h>
-#define ll long long
-#define ld long double
-#define rep(i, a, b) for(int i = a; i < (b); ++i)
-#define all(x) begin(x), end(x)
-#define sz(x) (int)(x).size()
-using namespace std;
 typedef complex<double> C;
 typedef vector<double> vd;
 typedef vector<int> vi;
