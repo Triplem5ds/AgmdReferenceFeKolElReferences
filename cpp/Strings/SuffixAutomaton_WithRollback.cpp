@@ -1,11 +1,3 @@
-#include <bits/stdc++.h>
-
-#define FIO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-using namespace std;
-typedef long long ll;
-typedef long double ld;
-const int N = 2e6 + 9, M = 5e5 + 9;
-
 struct SA {
     struct node {
         int to[26];
@@ -80,9 +72,3 @@ struct SA {
         logs.pop_back();
     }
 };
-
-int main() {
-    FIO
-
-    return 0;
-}

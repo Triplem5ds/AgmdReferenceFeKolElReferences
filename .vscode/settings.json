@@ -24,6 +24,7 @@
         "valarray": "cpp",
         "filesystem": "cpp",
         "bitset": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "random": "cpp"
     }
 }

@@ -5,7 +5,6 @@
 #define rep(i, a, b) for(int i = a; i < (b); ++i)
 #define all(x) begin(x), end(x)
 #define sz(x) (int)(x).size()
-#define IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
 typedef complex<double> C;
 typedef vector<double> vd;
@@ -48,7 +47,6 @@ vd conv(const vd& a, const vd& b) {
 }
 
 int main() {
-    IO
     //Applications
     //1-All possible sums
     

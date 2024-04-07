@@ -1,9 +1,4 @@
-#include<iostream>
-#include <bits/stdc++.h>
-#define ll long long
-#define ld long double
-#define IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-using namespace std;
+// vertex are one based
 struct graph
 {
     int L, R;
@@ -65,18 +60,3 @@ struct graph
         return match;
     }
 };
-
-int main()
-{
-    IO
-    int L, R, m;
-    cin>>L>>R>>m;
-    graph g(L, R);
-    for (int i = 0; i < m; ++i)
-    {
-        int u, v;
-        cin>>u>>v;
-        g.add_edge(u, v);
-    }
-    cout<<g.maximum_matching();
-}

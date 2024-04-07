@@ -1,6 +1,3 @@
-const int MOD = ....
-const int MAX = ....
-int catalan[MAX];
 void init() {
     catalan[0] = catalan[1] = 1;
     for (int i=2; i<=n; i++) {
@@ -13,7 +10,6 @@ void init() {
         }
     }
 }
-
 // 1- Number of correct bracket sequence consisting of n opening and n closing brackets.
 // 2- The number of rooted full binary trees with n+1 leaves (vertices are not numbered). 
 //    A rooted binary tree is full if every vertex has either two children or no children.

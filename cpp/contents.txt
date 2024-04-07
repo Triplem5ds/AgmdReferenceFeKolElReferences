@@ -28,7 +28,6 @@ DataStructures/MO'sAlgorithm.cpp	Mo's
 DataStructures/MOwithUpdates.cpp	Mo With Updates
 DataStructures/ordered_set.cpp	Ordered Set
 DataStructures/PresistentSegTree.cpp	Persistent Seg Tree
-DataStructures/SQRT.cpp	Sqrt Decomposition
 DataStructures/treap.cpp	Treap
 DataStructures/Wavelet_tree.cpp	Wavelet Tree
 DataStructures/SparseTable.cpp	SparseTable
