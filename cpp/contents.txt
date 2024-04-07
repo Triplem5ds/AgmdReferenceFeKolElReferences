@@ -22,8 +22,6 @@ Algebra/NTT_KACTL.cpp	NTT of KACTL
 [Data Structures]
 DataStructures/2DBIT.cpp	2D BIT
 DataStructures/2DSparseTable.cpp	2D Sparse table
-DataStructures/hillbertOrder.cpp	hillbert Order
-DataStructures/MergeSortBitWithUpdates.cpp	Merge Sort Bit with updates
 DataStructures/MO'sAlgorithm.cpp	Mo's
 DataStructures/MOwithUpdates.cpp	Mo With Updates
 DataStructures/ordered_set.cpp	Ordered Set
@@ -70,21 +68,17 @@ Math/rabinMiller.cpp	Rabin Miller Primality check
 
 [Strings]
 Strings/ACA.cpp	Aho-Corasick Mostafa
-Strings/ACA2.cpp	Aho-Corasick Anany
 Strings/KMP.cpp	KMP Anany
 Strings/Manacher's.cpp	Manacher Kactl
 Strings/SuffixArray.cpp	Suffix Array Kactl
-Strings/SuffixAutomaton.cpp	Suffix Automaton Anany
 Strings/SuffixAutomaton2.cpp	Suffix Automaton Mostafa
-Strings/SuffixAutomaton_WithRollback.cpp	Suffix Automaton With Rollback Mostafa
 Strings/Zalgo.cpp	Zalgo Anany
-Strings/minCycle.cpp	Minimum String Cycle
+Strings/minRotation.cpp	lexicographically smallest rotation of a string
 
 [Trees]
 trees/CentroidDecomposition.cpp	Centroid Decomposition
 trees/DSUonTree.cpp	Dsu On Trees
 trees/HLD.cpp	Heavy Light Decomposition (Along with Euler Tour)
-trees/LCAQuery.cpp	LCA
 trees/TreesMo.cpp	Mo on Trees
 
 [Numerical]

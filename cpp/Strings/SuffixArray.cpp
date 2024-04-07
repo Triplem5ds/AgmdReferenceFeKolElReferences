@@ -1,6 +1,7 @@
 struct SuffixArray {
 	using vi = vector<int>;
 	#define rep(i,a,b)  for(int i = a; i < b; i++)
+	#define all(x) begin(x), end(x)
     /*
         Note this code is considers also the empty suffix
         so hear sa[0] = n and sa[1] is the smallest non empty suffix
