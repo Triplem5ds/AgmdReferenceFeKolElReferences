@@ -22,6 +22,8 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "valarray": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp"
     }
 }

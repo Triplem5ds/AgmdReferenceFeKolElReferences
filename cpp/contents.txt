@@ -1,23 +1,24 @@
 [Combinatorics]
 Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
 Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
+
 [Algebra]
 Algebra/GrayCode.cpp	Gray Code
 Algebra/PrimitiveRoots.cpp	Primitive Roots
-Algebra/DiscreteLogarithm.cpp	Discrete Logarithm (min a^x=b%m)
-Algebra/DiscreteRoot.cpp	Discrete Root (given n, a and k find all x^k=a%n)
-Algebra/FactorialMod.cpp	Factorial modulo in plogn (Wilson Theroem)
+Algebra/DiscreteLogarithm.cpp	Discrete Logarithm minimum x for which ${a^x = b \% m}$
+Algebra/DiscreteRoot.cpp	Discrete Root finds all numbers x such that ${x^k = a \% n}$
+Algebra/FactorialMod.cpp	Factorial modulo in p*log(n) (Wilson Theroem)
 Algebra/Enumerating_all_submasks_of_a_given_mask.cpp	Iteration over submasks
 Algebra/Euler's_totient_function.cpp	Totient function
 Algebra/Extended+GCD+CRT.cpp	CRT and EEGCD
 Algebra/FFT.cpp	FFT
-Algebra/FFTMOD.cpp	FFTMOD
 Algebra/FibonacciNumbers.cpp	Fibonacci
 Algebra/GaussDeterminant.cpp	Gauss Determinant
 Algebra/GaussSystemOfLinearEquations.cpp	GAUSS SLAE
 Algebra/MatrixInverse.cpp	Matrix Inverse
 Algebra/NTT.cpp	NTT
 Algebra/NTT_KACTL.cpp	NTT of KACTL
+
 [Data Structures]
 DataStructures/2DBIT.cpp	2D BIT
 DataStructures/2DSparseTable.cpp	2D Sparse table
@@ -31,17 +32,20 @@ DataStructures/SQRT.cpp	Sqrt Decomposition
 DataStructures/treap.cpp	Treap
 DataStructures/Wavelet_tree.cpp	Wavelet Tree
 DataStructures/SparseTable.cpp	SparseTable
+
 [DP]
 DP/DCHT.cpp	Dynamic Convex Hull Trick
 DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
 DP/LiChaoTreeWithPointers.cpp	Li Chao Tree
 DP/LineContainer.cpp	CHT Line Container
+
 [Geometry]
 Geo/convex_hull.cpp	Convex Hull
 Geo/Geo1.cpp	Geometry Template
 Geo/Half-plane_intersection.cpp	Half Plane Intersection
 Geo/Intersecting_Segments.cpp	Segments Intersection
 Geo/UnionArea_Of_Rectangles.cpp	Rectangles Union
+
 [Graphs]
 Graphs/2sat.cpp	2 SAD
 Graphs/ArticulationPoint.cpp	Ariculation Point
@@ -61,11 +65,13 @@ Graphs/prufer_code.cpp	Prufer Code
 Graphs/PushRelabel.cpp	Push Relabel Max Flow
 Graphs/Tarjan.cpp	Tarjan Algo
 Graphs/BPM.cpp	Bipartite Matching
+
 [Math]
 Math/GaussianXor.cpp	Xor With Gauss
 Math/JosephusProblem.cpp	Josephus
 Math/Matrix.cpp	Matrix Power/Multiplication
 Math/rabinMiller.cpp	Rabin Miller Primality check
+
 [Strings]
 Strings/ACA.cpp	Aho-Corasick Mostafa
 Strings/ACA2.cpp	Aho-Corasick Anany
@@ -77,11 +83,13 @@ Strings/SuffixAutomaton2.cpp	Suffix Automaton Mostafa
 Strings/SuffixAutomaton_WithRollback.cpp	Suffix Automaton With Rollback Mostafa
 Strings/Zalgo.cpp	Zalgo Anany
 Strings/minCycle.cpp	Minimum String Cycle
+
 [Trees]
 trees/CentroidDecomposition.cpp	Centroid Decomposition
 trees/DSUonTree.cpp	Dsu On Trees
 trees/HLD.cpp	Heavy Light Decomposition (Along with Euler Tour)
 trees/LCAQuery.cpp	LCA
 trees/TreesMo.cpp	Mo on Trees
+
 [Numerical]
 Numerical/Lagrange.cpp	Lagrange Polynomial
