@@ -1,4 +1,4 @@
-// Returns minimum x for which a ^ x % m = b % m
+// Returns the smallest x > 0 :  a^x = b mod m
 ll modLog(ll a, ll b, ll m) {
     ll n = (ll) sqrt(m) + 1, e = 1, f = 1, j = 1;
     unordered_map<ll, ll> A;

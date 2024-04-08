@@ -7,7 +7,6 @@ struct MinimumVertexCover {
 	vector<int> comp[2];
 	MinimumVertexCover() {}
 	MinimumVertexCover(int n, vector<vector<int> > g) {
-
 		this->n = n;
 		this->g = g;
 		color = m = vector<int>(n, -1);
