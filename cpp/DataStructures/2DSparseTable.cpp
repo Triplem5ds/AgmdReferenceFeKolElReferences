@@ -1,15 +1,6 @@
-/*
-    note this isn't the best cache-wise version
-    query O(1), Build O(NMlgNlgM)
-    be careful when using it and note the he build a dimension above another
-    i.e he builds a sparse table for each row
-    the build sparse table over each row's sparse table
-*/
 const int N = 505, LG = 10;
-
 int st[N][N][LG][LG];
 int a[N][N], lg2[N];
-
 int yo(int x1, int y1, int x2, int y2) {
   x2++;
   y2++;
@@ -19,7 +10,6 @@ int yo(int x1, int y1, int x2, int y2) {
          max(st[x1][y2 - (1 << b)][a][b], st[x2 - (1 << a)][y2 - (1 << b)][a][b])
        );
 }
-
 void build(int n, int m) { // 0 indexed
   for (int i = 2; i < N; i++) lg2[i] = lg2[i >> 1] + 1;
   for (int i = 0; i < n; i++) {
