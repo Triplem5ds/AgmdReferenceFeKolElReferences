@@ -21,7 +21,6 @@ Algebra/NTT_KACTL.cpp	NTT of KACTL
 [Data Structures]
 DataStructures/2DBIT.cpp	2D BIT
 DataStructures/2DSparseTable.cpp	2D Sparse table
-DataStructures/MO'sAlgorithm.cpp	Mo's
 DataStructures/MOwithUpdates.cpp	Mo With Updates
 DataStructures/ordered_set.cpp	Ordered Set
 DataStructures/PresistentSegTree.cpp	Persistent Seg Tree

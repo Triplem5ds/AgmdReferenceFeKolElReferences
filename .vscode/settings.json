@@ -25,6 +25,7 @@
         "filesystem": "cpp",
         "bitset": "cpp",
         "chrono": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "queue": "cpp"
     }
 }

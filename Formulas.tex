@@ -6,11 +6,9 @@
 \item If you have a problem that tells you choose a[i] or b[i] (or a range) choose one of them initially and play a take or leave on the other
 \item If the problem tells you to do something cyclic solving it for x + x
 \item Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
-\item Check datatypes (if you are getting WA or TLE or RTE)
 \item in case of merging between sets try bitsets (i.e i + j or sth)
 \item If you have a TLE soln using bitset might help
 \item If everything else fails think Brute force or randomization
-\item If you have a solution and you think it's wrong write it instead of doing nothing
 \end{itemize}
 \hrulefill
 \subsection{Assignment Problems}
@@ -25,11 +23,6 @@
 \item If the problem tells your something about choosing an XOR of a subset (think FWHT or XOR-basis)
 \item If the problem tells you about getting XOR of a tree path let a[i] = XOR tree from root to i and solve this as an array
 \item If the problem tells you range XOR sth it's better to have prefix XOR and make it pairs XOR.
-\end{itemize}
-\hrulefill
-\subsection{Subset Problems}
-\begin{itemize}
-\item Problems that tells you what is the number of ways to choose X out of N that has some property (think convolution)
 \end{itemize}
 \hrulefill
 \subsection{Decompositions}
@@ -52,8 +45,6 @@
 \subsection{Trees}
 \begin{itemize}
 \item For problems that ask you to count stuff in a substree think (Euler Tour with RQ - Small to Large - DSU on Trees - PersistentSegTree)
-\item For Path Problems think (Centroid Decomposition - HLD)
-\item For a path think (HLD + Euler Tour)
 \item Note that the farthest node to any node in the tree is one of the two diameter heads
 \item In case of asking F(node, x) for each node it's probably DP on Trees
 \end{itemize}
@@ -67,30 +58,21 @@
 \hrulefill 
 \subsection{Geometry}
 \begin{itemize}
-\item In case of a set of points try scaling and translation
 \item Manhattan to King distance (x,y) -> (x+y, x-y)
 \item Lattice points on line: gcd(dx,dy) + 1
 \item Pick's theorem: $A = I + \frac{B}{2} - 1$
-\item sine rule: $\frac{A}{sin(a)} = \frac{B}{sin(b)} = \frac{C}{sin(c)}$
 \item cosine rule: $C^2=A^2+B^2-2AB \times cos(c)$
-\item Dot product = $|A| |B| \times cos(a)$
-\item Cross product = $|A| |B| \times sin(a)$
 \item Rotation around axis: $R = (cos(a) \times Id + sin(a) \times cross U + (1 - cos(a)) \times outer U)$
-\item Angle of regular polygon = $\frac{180 \times (n-2)}{n}$
-\item \# Diagonals of regular polygon = $\frac{n (n-3)}{n}$
 \item Triangulation of n-gon = Catalan (n-2)
 \end{itemize}
 \hrulefill
 \subsection{Area}
 \begin{itemize}
-\item triangle = $\frac{B \times H}{2}$
 \item triangle = $\sqrt(S \times (S-A) \times (S-B) \times (S-C))$, S = PERIMETER/2
 \item triangle = $r \times S$, r = radius of inscribed circle
-\item circle = $R^2 \times \pi$
 \item ellipse = $\pi \times r_1 \times r_2$
 \item sector = $\frac{(r^2 \times a)}{2}$
 \item circular cap = $\frac{R^2 \times (a-sin(a))}{2}$
-\item trapzoid = $\frac{(B1 + B2)}{2} \times H$
 \item prsim = $perimeter(B) L + 2 area(B)$
 \item sphere = $4 \pi r^2$
 \end{itemize}
