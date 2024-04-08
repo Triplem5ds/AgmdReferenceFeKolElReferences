@@ -39,8 +39,8 @@
 \contentsline {subsection}{\numberline {6.3}Half Plane Intersection}{8}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Segments Intersection}{9}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Rectangles Union}{10}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Graphs}{11}{section.7}%
-\contentsline {subsection}{\numberline {7.1}2 SAD}{11}{subsection.7.1}%
+\contentsline {section}{\numberline {7}Graphs}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}2 SAD}{10}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Ariculation Point}{11}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Bridges Tree and Diameter}{11}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}Dinic With Scalling}{12}{subsection.7.4}%
@@ -59,7 +59,7 @@
 \contentsline {subsection}{\numberline {7.17}Bipartite Matching}{17}{subsection.7.17}%
 \contentsline {section}{\numberline {8}Math}{17}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Sum Of floored division.}{17}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}ModMulLL}{18}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}ModMulLL}{17}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}MillerRabin Primality check}{18}{subsection.8.3}%
 \contentsline {subsection}{\numberline {8.4}Pollard-rho randomized factorization algorithm ${O(n^{1/4})}$}{18}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}ModSqrt Finds x s.t ${x^2 = a \mod p}$}{18}{subsection.8.5}%
@@ -80,17 +80,17 @@
 \contentsline {subsection}{\numberline {10.4}Mo on Trees}{21}{subsection.10.4}%
 \contentsline {section}{\numberline {11}Numerical}{21}{section.11}%
 \contentsline {subsection}{\numberline {11.1}Lagrange Polynomial}{21}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Polynomials}{22}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.2}Polynomials}{21}{subsection.11.2}%
 \contentsline {section}{\numberline {12}Guide}{22}{section.12}%
 \contentsline {subsection}{\numberline {12.1}Notes}{22}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Assignment Problems}{23}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.2}Assignment Problems}{22}{subsection.12.2}%
 \contentsline {subsection}{\numberline {12.3}XOR problems}{23}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}Decompositions}{23}{subsection.12.4}%
 \contentsline {subsection}{\numberline {12.5}Strings}{23}{subsection.12.5}%
 \contentsline {subsection}{\numberline {12.6}Trees}{23}{subsection.12.6}%
 \contentsline {subsection}{\numberline {12.7}Flows}{23}{subsection.12.7}%
 \contentsline {subsection}{\numberline {12.8}Geometry}{23}{subsection.12.8}%
-\contentsline {subsection}{\numberline {12.9}Area}{24}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.9}Area}{23}{subsection.12.9}%
 \contentsline {subsection}{\numberline {12.10}Volume}{24}{subsection.12.10}%
 \contentsline {subsection}{\numberline {12.11}Combinatorics}{24}{subsection.12.11}%
 \contentsline {subsection}{\numberline {12.12}Graph Theory}{24}{subsection.12.12}%
