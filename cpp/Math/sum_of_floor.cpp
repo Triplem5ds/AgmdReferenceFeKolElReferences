@@ -1,23 +1,17 @@
-// return sum_{i=0}^{n-1} floor((ai + b) / m) (mod 2^64)
-#define ull unsigned long long
-ull floor_sum_unsigned(ull n, ull m, ull a, ull b) {
-    ull ans = 0;
-    while (true) {
-        if (a >= m) {
-            ans += n * (n - 1) / 2 * (a / m);
-            a %= m;
-        }
-        if (b >= m) {
-            ans += n * (b / m);
-            b %= m;
-        }
-        ull y_max = a * n + b;
-        if (y_max < m) break;
-        // y_max < m * (n + 1)
-        // floor(y_max / m) <= n
-        n = (ull)(y_max / m);
-        b = (ull)(y_max % m);
-        std::swap(m, a);
-    }
-    return ans;
+typedef unsigned long long ull;
+ull sumsq(ull to) { return to / 2 * ((to-1) | 1); }
+
+// return sum_{i=0}^{to-1} floor((ki + c) / m) (mod 2^64)
+ull divsum(ull to, ull c, ull k, ull m) {
+    ull res = k / m * sumsq(to) + c / m * to;
+    k %= m; c %= m;
+    if (!k) return res;
+    ull to2 = (to * k + c) / m;
+    return res + (to - 1) * to2 - divsum(to2, m-1 - c, m, k);
+}
+// return sum_{i=0}^{to-1} (ki+c) % m
+ll modsum(ull to, ll c, ll k, ll m) {
+    c = ((c % m) + m) % m;
+    k = ((k % m) + m) % m;
+    return to * c + k * sumsq(to) - m * divsum(to, c, k, m);
 }

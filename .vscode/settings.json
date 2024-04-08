@@ -26,6 +26,8 @@
         "bitset": "cpp",
         "chrono": "cpp",
         "random": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "locale": "cpp",
+        "numeric": "cpp"
     }
 }

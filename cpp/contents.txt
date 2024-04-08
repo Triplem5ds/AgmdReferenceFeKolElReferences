@@ -1,3 +1,6 @@
+[Template]
+template/template.cpp	template
+
 [Combinatorics]
 Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
 Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
@@ -19,6 +22,7 @@ Algebra/MatrixInverse.cpp	Matrix Inverse
 Algebra/NTT_KACTL.cpp	NTT of KACTL
 
 [Data Structures]
+DataStructures/UnionFindRollback.cpp	UnionFindRollback
 DataStructures/2DBIT.cpp	2D BIT
 DataStructures/2DSparseTable.cpp	2D Sparse table
 DataStructures/MOwithUpdates.cpp	Mo With Updates
@@ -62,7 +66,7 @@ Graphs/BPM.cpp	Bipartite Matching
 Math/sum_of_floor.cpp	Sum Of Floor
 Math/GaussianXor.cpp	Xor With Gauss
 Math/JosephusProblem.cpp	Josephus
-Math/rabinMiller.cpp	Rabin Miller Primality check
+Math/MillerRabin.cpp	MillerRabin Primality check
 
 [Strings]
 Strings/ACA.cpp	Aho-Corasick Mostafa
@@ -81,3 +85,5 @@ trees/TreesMo.cpp	Mo on Trees
 
 [Numerical]
 Numerical/Lagrange.cpp	Lagrange Polynomial
+Numerical/poly.cpp	Polynomials
+
