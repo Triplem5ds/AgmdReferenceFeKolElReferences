@@ -1,7 +1,6 @@
 [Combinatorics]
 Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
 Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
-Combinatorics/notes.cpp	Notes
 
 [Algebra]
 Algebra/GrayCode.cpp	Gray Code
@@ -61,9 +60,9 @@ Graphs/Tarjan.cpp	Tarjan Algo
 Graphs/BPM.cpp	Bipartite Matching
 
 [Math]
+Math/sum_of_floor.cpp	Sum Of Floor
 Math/GaussianXor.cpp	Xor With Gauss
 Math/JosephusProblem.cpp	Josephus
-Math/Matrix.cpp	Matrix Power/Multiplication
 Math/rabinMiller.cpp	Rabin Miller Primality check
 
 [Strings]

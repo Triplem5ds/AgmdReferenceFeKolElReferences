@@ -43,4 +43,3 @@ public:
 private:
 	std::vector<long long> y, den;
 };
- 

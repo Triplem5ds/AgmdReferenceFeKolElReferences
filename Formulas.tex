@@ -48,11 +48,6 @@
 \item Longest Common Prefix is mostly a (suffix automaton-array) thing
 \item try thinking bitsets
 \end{itemize}
-\hrulefill
-\subsection{Data Structures}
-\begin{itemize}
-\item Problems that ask you to count the numbers v where (X <= v <= Y) can be solved with (MO-SquareRoot-PersistentSegTree-Wavelet)
-\end{itemize}
 \hrulefill 
 \subsection{Trees}
 \begin{itemize}
@@ -117,6 +112,7 @@
 \item  K-Cyclic permutation = ${\binom{n}{k}} \times (k-1)!$
 \item Stirling numbers $S(n,k) = k \times S(n-1,k) + S(n,k-1)$ number of way to partition n in k sets.
 \item Bell number $B_n = \sum_1^n (n-1, k) B_k$ 
+\item \# ways to make a graph with k components connected $n^{k-2} \times \prod_{i=1}^k s_i$
 \item Arithmetic-geometric-progression $S_n = \frac{A_1 \times G_1 - A_{n+1} \times G_{n+1}}{1-r} + \frac{dr}{(1-r)^2} \times (G_1-G_{n+1})$
 \end{itemize}
 \hrulefill
@@ -132,31 +128,6 @@
 \item feasible flow in a network with both upper and lower capacity constraints, no source or sink: capacities are changed to upper bound - lower bound. Add a new source and a sink. let M[v] = (sum of lower bounds of ingoing edges to v) - (sum of lower bounds of outgoing edges from v). For all v, if M[v]>0 then add edge (S,v) with capacity M, otherwise add (v,T) with capacity -M. If all outgoing edges from S are full, then a feasible flow exists, it is the flow plus the original lower bounds.
 \item maximum flow in a network with both upper and lower capacity constraints, with source s and sink t: add edge (t,s) with capacity infinity. Binary search for the lower bound, check whether a feasible exists for a network WITHOUT source or sink (B).
 \end{itemize}
-\hrulefill
-\subsection{Sum of floor function}
-\raggedbottom\begin{lstlisting}[style=txt]
-Algorithm:
-    t = GCD(p, q)
-    p = p/t
-    q = q/t
-    s = 0
-    z = 1
-    while (q > 0) and (n > 0)
-      (point A)
-      t = [p/q]
-      s = s + ztn(n+1)/2
-      p = p - qt
-      (point B)
-      t = [n/q]
-      s = s + zp(n+1)-zt(pqt +p+q-1)/2
-      n = n - qt
-      (point C)
-      t = [np/q]
-      s = s + ztn
-      n = t
-      swap p and q
-      z = -z
-\end{lstlisting}
 \hrulefill
 \subsection{Joseph problem}
 ${\displaystyle g(n,k)={\begin{cases}

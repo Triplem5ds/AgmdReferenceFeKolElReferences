@@ -17,31 +17,14 @@ void dfs(int node, int par){
     }
     if(par == 0 && kam > 1) ar_point[node] = 1;
 }
-
-void init(int n){
-    for(int i = 1; i <= n; i++){
-        adj[i].clear();
-        low[i] = dfsn[i] = 0;
-        instack[i] = 0;
-        ar_point[i] = 0;
-    }
-    timer = 0;
-}
-
 int main(){
-    int tt;
-    cin >> tt;
-    while(tt--){
-        // Input
-        init(n);
-        for(int i = 1; i <= n; i++){
-            if(dfsn[i] == 0) dfs(i, 0);
-        }
-        int c = 0;
-        for(int i = 1; i <= n; i++){
-            if(ar_point[i]) c++;
-        }
-        cout << c << '\n';
+    // Input
+    for(int i = 1; i <= n; i++){
+        if(dfsn[i] == 0) dfs(i, 0);
     }
-    return 0;
+    int c = 0;
+    for(int i = 1; i <= n; i++){
+        if(ar_point[i]) c++;
+    }
+    cout << c << '\n';
 }

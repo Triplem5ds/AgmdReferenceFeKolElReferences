@@ -1,56 +1,30 @@
 using  ptype =  double edit this first ;
 double EPS = 1e-9;
 struct point {
-
     ptype x,  y;
     point(ptype x, ptype y) : x(x), y(y) {}
-
-    point operator -(const point & other)const {
-        return point(x - other.x, y - other.y);
-    }
-
-    point operator +(const point & other)const {
-        return point(x + other.x, y + other.y);
-    }
-
-    point operator *(ptype c) const {
-        return point(x * c, y * c);
-    }
-
-    point operator /(ptype c) const {
-        return point(x / c, y / c);
-    }
-    point prep() {
-        return point(-y, x);
-    }
-
+    point operator -(const point & other)const { return point(x - other.x, y - other.y);}
+    point operator +(const point & other)const { return point(x + other.x, y + other.y);}
+    point operator *(ptype c) const { return point(x * c, y * c); }
+    point operator /(ptype c) const { return point(x / c, y / c); }
+    point prep() { return point(-y, x); }
 };
-ptype cross(point a, point b) {
-    return a.x * b.y - a.y * b.x;
-}
+ptype cross(point a, point b) { return a.x * b.y - a.y * b.x;}
+ptype dot(point a, point b) {return a.x * b.x + a.y * b.y;}
+double abs(point a) {return sqrt(dot(a, a));}
 
-ptype dot(point a, point b) {
-    return a.x * b.x + a.y * b.y;
-}
-double abs(point a) {
-    return sqrt(dot(a, a));
-}
-// angle between [0 , pi]
-double angle (point a, point b) {
+double angle (point a, point b) { // angle between [0 , pi]
     return acos(dot(a, b) / abs(a) / abs(b));
 }
-// a : point in Line
-// d : Line direction
+// a : point in Line, d : Line direction
 point LineLineIntersect(point a1, point d1, point a2, point d2) {
     return a1 + d1 * cross(a2 - a1, d2) / cross(d1, d2);
 }
-// Line a---b
-// point C
+// Line a---b, point C
 point ProjectPointLine(point a, point b, point c) {
     return a + (b - a) * 1.0 * dot(c - a, b - a) / dot(b - a, b - a);
 }
-// segment a---b
-// point C
+// segment a---b, point C
 point ProjectPointSegment(point a, point b, point c) {
     double r = dot(c - a, b - a) / dot(b - a, b - a);
     if(r < 0)
@@ -59,11 +33,9 @@ point ProjectPointSegment(point a, point b, point c) {
         return b;
     return a + (b - a) * r ;
 }
-// Line a---b
-// point p
+// Line a---b, point p
 point reflectAroundLine(point a, point b, point p) {
-    //(proj-p) *2 + p
-    return ProjectPointLine(a, b, p) * 2 - p;
+    return ProjectPointLine(a, b, p) * 2 - p;// (proj-p) *2 + p
 }
 // Around origin 
 point RotateCCW(point p, double t) {
@@ -86,7 +58,6 @@ vector<point> CircleLineIntersect(point a, point b, point center, double r) {
 }
 
 vector<point> CircleCircleIntersect(point c1, ld r1, point c2, ld r2) {
-
     if (r1 < r2) {
         swap(r1, r2);
         swap(c1, c2);
@@ -103,13 +74,10 @@ vector<point> CircleCircleIntersect(point c1, ld r1, point c2, ld r2) {
     return {c1 + RotateCCW(p, angle), c1 + RotateCCW(p, -angle)};
 
 }
-
 point circumcircle(point p1, point p2, point p3) {
-
     return LineLineIntersect((p1 + p2) / 2, (p1 - p2).prep(),
                              (p1 + p3) / 2, (p1 - p3).prep() );
 }
-//S : Area.
 //I : number points with integer coordinates lying strictly inside the polygon.
 //B : number of points lying on polygon sides by B.
-//S = I + B/2 - 1
+//Area = I + B/2 - 1

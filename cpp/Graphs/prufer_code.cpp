@@ -1,8 +1,4 @@
-#include<bits/stdc++.h>
-using namespace std;
-
 const int N = 3e5 + 9;
-
 /*
 prufer code is a sequence of length n-2 to uniquely determine a labeled tree with n vertices
 Each time take the leaf with the lowest number and add the node number the leaf is connected to
@@ -68,9 +64,4 @@ vector < pair<int, int> > prufer_to_tree(const vector<int> & prufer_code) {
   }
   for (int v = 0; v < n - 1; ++v) if (degree[v] == 1) result.push_back (make_pair (v, n - 1));
   return result;
-}
-
-int32_t main() {
-
-  return 0;
 }
