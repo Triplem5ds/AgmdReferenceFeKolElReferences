@@ -1,36 +1,4 @@
 \section{Guide}
-\subsection{Notes}
-\begin{itemize}
-\item Don't forget to solve the problem in reverse (i.e deleting->adding or adding->deleting, ...etc)
-\item Max flow is just choosing the maximum number of paths between source and sink
-\item If you have a problem that tells you choose a[i] or b[i] (or a range) choose one of them initially and play a take or leave on the other
-\item If the problem tells you to do something cyclic solving it for x + x
-\item Problems that are close to NP problems sometimes have greedy solutions for large input i.e n >=20-30
-\item in case of merging between sets try bitsets (i.e i + j or sth)
-\item If you have a TLE soln using bitset might help
-\item If everything else fails think Brute force or randomization
-\end{itemize}
-\hrulefill
-\subsection{Assignment Problems}
-\begin{itemize}
-\item If you see a problem that tells you out of N choose K that has some property (think flows or aliens trick)
-\item If you see a problem that tells for some X choose a Y (think flows)
-\item If the problem tells you to choose a Y from L->R (think range flow i.e putting edges between the same layer)
-\end{itemize}
-\hrulefill
-\subsection{XOR problems}
-\begin{itemize}
-\item If the problem tells your something about choosing an XOR of a subset (think FWHT or XOR-basis)
-\item If the problem tells you about getting XOR of a tree path let a[i] = XOR tree from root to i and solve this as an array
-\item If the problem tells you range XOR sth it's better to have prefix XOR and make it pairs XOR.
-\end{itemize}
-\hrulefill
-\subsection{Decompositions}
-\begin{itemize}
-\item If a problem is a asking you to calculate the answer after K steps you can calculate the answer for K%squareRoot and for K/SquareRoot
-\item If the nubmer of queries is significintly larger than updates or vice versa you can use square root Decompositions to give advantage to one over the other
-\end{itemize}
-\hrulefill
 \subsection{Strings}
 \begin{itemize}
 \item Longest Common Substring is easier with suffix automaton 
@@ -42,41 +10,6 @@
 \item try thinking bitsets
 \end{itemize}
 \hrulefill 
-\subsection{Trees}
-\begin{itemize}
-\item For problems that ask you to count stuff in a substree think (Euler Tour with RQ - Small to Large - DSU on Trees - PersistentSegTree)
-\item Note that the farthest node to any node in the tree is one of the two diameter heads
-\item In case of asking F(node, x) for each node it's probably DP on Trees
-\end{itemize}
-\hrulefill 
-\subsection{Flows}
-\begin{itemize}
-\item If you want to make a K-covering instead of consdirign lit edges consider non-lit edges
-\item To get mincost while mainting a flow network (note that flows are batched together according to cost)
-\item If the problem asks you to choose some stuff the minimizes use Min Cut (If maximizes sum up stuff and subtract min cut)
-\end{itemize}
-\hrulefill 
-\subsection{Geometry}
-\begin{itemize}
-\item Manhattan to King distance (x,y) -> (x+y, x-y)
-\item Lattice points on line: gcd(dx,dy) + 1
-\item Pick's theorem: $A = I + \frac{B}{2} - 1$
-\item cosine rule: $C^2=A^2+B^2-2AB \times cos(c)$
-\item Rotation around axis: $R = (cos(a) \times Id + sin(a) \times cross U + (1 - cos(a)) \times outer U)$
-\item Triangulation of n-gon = Catalan (n-2)
-\end{itemize}
-\hrulefill
-\subsection{Area}
-\begin{itemize}
-\item triangle = $\sqrt(S \times (S-A) \times (S-B) \times (S-C))$, S = PERIMETER/2
-\item triangle = $r \times S$, r = radius of inscribed circle
-\item ellipse = $\pi \times r_1 \times r_2$
-\item sector = $\frac{(r^2 \times a)}{2}$
-\item circular cap = $\frac{R^2 \times (a-sin(a))}{2}$
-\item prsim = $perimeter(B) L + 2 area(B)$
-\item sphere = $4 \pi r^2$
-\end{itemize}
-\hrulefill
 \subsection{Volume}
 \begin{itemize}
 \item Right circular cylinder = $\pi r^2 h$ 
@@ -87,28 +20,9 @@
 \item Sphere cap = $\frac{\pi h^2 (3r-h)}{3}$
 \end{itemize}
 \hrulefill
-\subsection{Combinatorics}
-\begin{itemize}
-\item Cayley formula: number of forest with k trees where first k nodes belongs to different trees = $k n^{n-k-1}$ . Multinomial theorem for trees of given degree sequence ${\binom{n}{d_i}}$
-\item Prufer sequence (M5da calls it parent array)
-\item  K-Cyclic permutation = ${\binom{n}{k}} \times (k-1)!$
-\item Stirling numbers $S(n,k) = k \times S(n-1,k) + S(n,k-1)$ number of way to partition n in k sets.
-\item Bell number $B_n = \sum_1^n (n-1, k) B_k$ 
-\item \# ways to make a graph with k components connected $n^{k-2} \times \prod_{i=1}^k s_i$
-\item Arithmetic-geometric-progression $S_n = \frac{A_1 \times G_1 - A_{n+1} \times G_{n+1}}{1-r} + \frac{dr}{(1-r)^2} \times (G_1-G_{n+1})$
-\end{itemize}
-\hrulefill
 \subsection{Graph Theory}
 \begin{itemize}
-\item Graph realization problem: sorted decreasing degrees: $\sum_1^k d_i = k(k-1)+sum_(k+1)^n \min(d_i,k)$ (first k form clique and all other nodes are connected to them).
-\item Euler formula: $v+f = e+c+1$
-\item \# perfect matching in bipartite graph, $DP[S][j] = DP[S][j-1] + DP[S/{v}][j-1]$ for all v connected to the j node.
-\end{itemize}
-\hrulefill
-\subsection{Max flow with lower bound}
-\begin{itemize}
-\item feasible flow in a network with both upper and lower capacity constraints, no source or sink: capacities are changed to upper bound - lower bound. Add a new source and a sink. let M[v] = (sum of lower bounds of ingoing edges to v) - (sum of lower bounds of outgoing edges from v). For all v, if M[v]>0 then add edge (S,v) with capacity M, otherwise add (v,T) with capacity -M. If all outgoing edges from S are full, then a feasible flow exists, it is the flow plus the original lower bounds.
-\item maximum flow in a network with both upper and lower capacity constraints, with source s and sink t: add edge (t,s) with capacity infinity. Binary search for the lower bound, check whether a feasible exists for a network WITHOUT source or sink (B).
+\item Euler formula: $v+f = e+2$
 \end{itemize}
 \hrulefill
 \subsection{Joseph problem}
