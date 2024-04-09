@@ -20,14 +20,12 @@ struct PushRelabel {
             g[from].back().index++;
         g[to].push_back(edge(to, from, 0, 0, g[from].size() - 1));
     }
-
     void enqueue(int v) {
         if (!active[v] && excess[v] > 0) {
             active[v] = true;
             Q.push(v);
         }
     }
-
     void push(edge &e) {
         int amt = (int) min(excess[e.from], (long long) e.cap - e.flow);
         if (height[e.from] <= height[e.to] || amt == 0)
@@ -38,7 +36,6 @@ struct PushRelabel {
         excess[e.from] -= amt;
         enqueue(e.to);
     }
-
     void relabel(int v) {
         count[height[v]]--;
         int d = 2 * n;
@@ -50,7 +47,6 @@ struct PushRelabel {
         count[height[v]]++;
         enqueue(v);
     }
-
     void gap(int k) {
         for (int v = 0; v < n; v++) {
             if (height[v] < k)
@@ -61,7 +57,6 @@ struct PushRelabel {
             enqueue(v);
         }
     }
-
     void discharge(int v) {
         for (int i = 0; excess[v] > 0 && i < g[v].size(); i++)
             push(g[v][i]);
@@ -72,7 +67,6 @@ struct PushRelabel {
                 relabel(v);
         }
     }
-
     long long max_flow(int source, int dest) {
         count[0] = n - 1;
         count[n] = 1;
@@ -82,14 +76,12 @@ struct PushRelabel {
             excess[source] += it.cap;
             push(it);
         }
-
         while (!Q.empty()) {
             int v = Q.front();
             Q.pop();
             active[v] = false;
             discharge(v);
         }
-
         long long max_flow = 0;
         for (auto &e: g[source])
             max_flow += e.flow;

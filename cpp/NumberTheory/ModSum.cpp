@@ -1,3 +1,4 @@
+// log(m), with a large constant.
 typedef unsigned long long ull;
 ull sumsq(ull to) { return to / 2 * ((to-1) | 1); }
 

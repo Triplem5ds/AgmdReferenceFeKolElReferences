@@ -7,13 +7,8 @@ Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
 
 [Algebra]
 Algebra/GrayCode.cpp	Gray Code
-Algebra/PrimitiveRoots.cpp	Primitive Roots
-Algebra/DiscreteLogarithm.cpp	Discrete Logarithm minimum x for which ${a^x = b \% m}$
-Algebra/DiscreteRoot.cpp	Discrete Root finds all numbers x such that ${x^k = a \% n}$
 Algebra/FactorialMod.cpp	Factorial modulo in p*log(n) (Wilson Theroem)
 Algebra/Enumerating_all_submasks_of_a_given_mask.cpp	Iteration over submasks
-Algebra/Euler's_totient_function.cpp	Totient function
-Algebra/Extended+GCD+CRT.cpp	CRT and EGCD
 Algebra/FastFourierTransform.cpp	FFT
 Algebra/FastFourierTransformMod.cpp	FFT with mod
 Algebra/FastSubsetTransform.cpp	convolutions of AND-XOR-OR
@@ -50,26 +45,41 @@ Graphs/ArticulationPoint.cpp	Ariculation Point
 Graphs/BridgesTree_TreeDiameter.cpp	Bridges Tree and Diameter
 Graphs/DinicWithScalling.cpp	Dinic With Scalling
 Graphs/GomoryHu.cpp	Gomory Hu
-Graphs/HopcraftKarp.cpp	HopcraftKarp BPM
-Graphs/Hungarian.cpp	Hungarian
 Graphs/Kosaraju.cpp	Kosaraju
 Graphs/ManhattanMST.cpp	Manhattan MST
 Graphs/MaxCliqueFinding.cpp	Maximum Clique
-Graphs/MCMFSPFA.cpp	MCMF
+
+Graphs/HopcraftKarp.cpp	HopcraftKarp matching (Bipartite)
+Graphs/Hungarian.cpp	Hungarian Weighted matching (Bipartite)
+
+Graphs/MCMFSPFA.cpp	MinCostMaxFlow
+Graphs/PushRelabel.cpp	Push Relabel Max Flow
 Graphs/MinimumVertexCover.cpp	Minmimum Vertex Cover (Bipartite)
 Graphs/prufer_code.cpp	Prufer Code
-Graphs/PushRelabel.cpp	Push Relabel Max Flow
-Graphs/Tarjan.cpp	Tarjan Algo
-Graphs/BPM.cpp	Bipartite Matching
 
-[Math]
-Math/ModSum.cpp	Sum Of floored division.
-Math/ModMulLL.cpp	ModMulLL
-Math/MillerRabin.cpp	MillerRabin Primality check
-Math/Factor.cpp	Pollard-rho randomized factorization algorithm ${O(n^{1/4})}$
-Math/ModSqrt.cpp	ModSqrt Finds x s.t ${x^2 = a \mod p}$
-Math/GaussianXor.cpp	Xor With Gauss
-Math/JosephusProblem.cpp	Josephus
+Graphs/Tarjan.cpp	Tarjan Algo
+
+
+
+[NumberTheory]
+NumberTheory/ModSum.cpp	ModSum (Sum Of floored division)
+NumberTheory/ModMulLL.cpp	ModMulLL
+NumberTheory/ModSqrt.cpp	ModSqrt Finds x s.t ${x^2 = a \mod p}$
+
+NumberTheory/MillerRabin.cpp	MillerRabin Primality check
+NumberTheory/Factor.cpp	Pollard-rho randomized factorization algorithm ${O(n^{1/4})}$
+
+NumberTheory/PrimitiveRoots.cpp	Primitive Roots
+NumberTheory/DiscreteLogarithm.cpp	Discrete Logarithm minimum x for which ${a^x = b \% m}$
+NumberTheory/DiscreteRoot.cpp	Discrete Root finds all numbers x such that ${x^k = a \% n}$
+
+NumberTheory/Euler's_totient_function.cpp	Totient function
+NumberTheory/Extended+GCD+CRT.cpp	CRT and EGCD
+
+NumberTheory/GaussianXor.cpp	Xor With Gauss
+NumberTheory/JosephusProblem.cpp	Josephus
+
+
 
 [Strings]
 Strings/ACA.cpp	Aho-Corasick Mostafa

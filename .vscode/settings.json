@@ -29,6 +29,8 @@
         "queue": "cpp",
         "locale": "cpp",
         "numeric": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "limits": "cpp",
+        "algorithm": "cpp"
     }
 }

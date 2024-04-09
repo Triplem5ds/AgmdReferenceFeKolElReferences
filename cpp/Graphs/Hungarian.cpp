@@ -1,12 +1,7 @@
-/*  
-    Notes:
-        note that n must be <= m
-        so in case in your problem n >= m, just swap 
-    also note this
-    void set(int x, int y, ll v){a[x+1][y+1]=v;}
-    the algorithim assumes you're using 0-index
-    but it's using 1-based
-*/
+// Weighted Bipartite matching N^2 * M
+// note that n must be <= m so in case in your problem n >= m, just swap 
+// also note this void set(int x, int y, ll v){a[x+1][y+1]=v;}
+// the algorithim assumes you're using 0-index but it's using 1-based
 struct Hungarian {
     const ll INF = 1000000000000000000; ///10^18
 	int n,m;
