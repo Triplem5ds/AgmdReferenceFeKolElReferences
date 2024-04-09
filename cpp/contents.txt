@@ -46,7 +46,6 @@ Graphs/BridgesTree_TreeDiameter.cpp	Bridges Tree and Diameter
 Graphs/DinicWithScalling.cpp	Dinic With Scalling
 Graphs/GomoryHu.cpp	Gomory Hu
 Graphs/Kosaraju.cpp	Kosaraju
-Graphs/ManhattanMST.cpp	Manhattan MST
 Graphs/MaxCliqueFinding.cpp	Maximum Clique
 
 Graphs/HopcraftKarp.cpp	HopcraftKarp matching (Bipartite)
