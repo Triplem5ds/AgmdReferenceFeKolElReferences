@@ -1,12 +1,9 @@
-/*
-    Properties:
-        1. consider path(a,b) can be decomposed to path(a,lca(a,b)) and path(b,lca(a,b))
-        where lca(a,b) is the lca on the centroid tree
-        2. Each one of the n^2 paths is the concatenation of two paths in a set of O(n lg(n)) 
-        paths from a node to all its ancestors in the centroid decomposition.
-        3. Ancestor of a node in the original tree is either an ancestor in the CD tree or
-        a descendadnt
-*/
+// Properties:
+// 1. consider path(a,b) can be decomposed to path(a,lca(a,b)) and path(b,lca(a,b))
+// where lca(a,b) is the lca on the centroid tree
+// 2.Each one of the n^2 paths is the concatenation of two paths in a set of O(nlg(n)) 
+// paths from a node to all its ancestors in the centroid decomposition.
+// 3. Ancestor of a node in the original tree is either an ancestor in the CD tree or a descendadnt
 vector<int> adj[N]; ///adjacency list of original graph
 int n;
 int sz[N];

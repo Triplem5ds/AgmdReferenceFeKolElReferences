@@ -40,7 +40,7 @@ Geo/Intersecting_Segments.cpp	Segments Intersection
 Geo/UnionArea_Of_Rectangles.cpp	Rectangles Union
 
 [Graphs]
-Graphs/2sat.cpp	2 SAD
+#Graphs/2sat.cpp	2 SAD
 Graphs/ArticulationPoint.cpp	Ariculation Point
 Graphs/BridgesTree_TreeDiameter.cpp	Bridges Tree and Diameter
 Graphs/DinicWithScalling.cpp	Dinic With Scalling
@@ -53,11 +53,12 @@ Graphs/Hungarian.cpp	Hungarian Weighted matching (Bipartite)
 
 Graphs/MCMFSPFA.cpp	MinCostMaxFlow
 Graphs/PushRelabel.cpp	Push Relabel Max Flow
-Graphs/MinimumVertexCover.cpp	Minmimum Vertex Cover (Bipartite)
-Graphs/prufer_code.cpp	Prufer Code
 
+Graphs/prufer_code.cpp	Prufer Code
 Graphs/Tarjan.cpp	Tarjan Algo
 
+#Graphs/MinimumVertexCover.cpp	Minmimum Vertex Cover (Bipartite)
+#Graphs/ManhattanMST.cpp	Manhattan MST
 
 
 [NumberTheory]

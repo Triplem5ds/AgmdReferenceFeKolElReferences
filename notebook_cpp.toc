@@ -34,51 +34,49 @@
 \contentsline {subsection}{\numberline {6.4}Segments Intersection}{7}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Rectangles Union}{7}{subsection.6.5}%
 \contentsline {section}{\numberline {7}Graphs}{8}{section.7}%
-\contentsline {subsection}{\numberline {7.1}2 SAD}{8}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Ariculation Point}{8}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Bridges Tree and Diameter}{9}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Dinic With Scalling}{9}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Gomory Hu}{9}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Kosaraju}{10}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Maximum Clique}{10}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}HopcraftKarp matching (Bipartite)}{10}{subsection.7.8}%
-\contentsline {subsection}{\numberline {7.9}Hungarian Weighted matching (Bipartite)}{10}{subsection.7.9}%
-\contentsline {subsection}{\numberline {7.10}MinCostMaxFlow}{11}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}Push Relabel Max Flow}{11}{subsection.7.11}%
-\contentsline {subsection}{\numberline {7.12}Minmimum Vertex Cover (Bipartite)}{12}{subsection.7.12}%
-\contentsline {subsection}{\numberline {7.13}Prufer Code}{12}{subsection.7.13}%
-\contentsline {subsection}{\numberline {7.14}Tarjan Algo}{13}{subsection.7.14}%
-\contentsline {section}{\numberline {8}NumberTheory}{13}{section.8}%
-\contentsline {subsection}{\numberline {8.1}ModSum (Sum Of floored division)}{13}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}ModMulLL}{13}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}ModSqrt Finds x s.t ${x^2 = a \mod p}$}{13}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}MillerRabin Primality check}{13}{subsection.8.4}%
+\contentsline {subsection}{\numberline {7.1}Ariculation Point}{8}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Bridges Tree and Diameter}{8}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Dinic With Scalling}{9}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Gomory Hu}{9}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Kosaraju}{9}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Maximum Clique}{10}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}HopcraftKarp matching (Bipartite)}{10}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Hungarian Weighted matching (Bipartite)}{10}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}MinCostMaxFlow}{10}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}Push Relabel Max Flow}{11}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}Prufer Code}{11}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.12}Tarjan Algo}{12}{subsection.7.12}%
+\contentsline {section}{\numberline {8}NumberTheory}{12}{section.8}%
+\contentsline {subsection}{\numberline {8.1}ModSum (Sum Of floored division)}{12}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}ModMulLL}{12}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}ModSqrt Finds x s.t ${x^2 = a \mod p}$}{12}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}MillerRabin Primality check}{12}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}Pollard-rho randomized factorization algorithm ${O(n^{1/4})}$}{13}{subsection.8.5}%
 \contentsline {subsection}{\numberline {8.6}Primitive Roots}{13}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Discrete Logarithm minimum x for which ${a^x = b \% m}$}{14}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Discrete Root finds all numbers x such that ${x^k = a \% n}$}{14}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Totient function}{14}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}CRT and EGCD}{14}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}Xor With Gauss}{14}{subsection.8.11}%
-\contentsline {subsection}{\numberline {8.12}Josephus}{14}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.7}Discrete Logarithm minimum x for which ${a^x = b \% m}$}{13}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Discrete Root finds all numbers x such that ${x^k = a \% n}$}{13}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Totient function}{13}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}CRT and EGCD}{13}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Xor With Gauss}{13}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Josephus}{13}{subsection.8.12}%
 \contentsline {section}{\numberline {9}Strings}{14}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Aho-Corasick Mostafa}{14}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}KMP Anany}{15}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Manacher Kactl}{15}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Suffix Array Kactl}{15}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.2}KMP Anany}{14}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Manacher Kactl}{14}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Suffix Array Kactl}{14}{subsection.9.4}%
 \contentsline {subsection}{\numberline {9.5}Suffix Automaton Mostafa}{15}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Zalgo Anany}{16}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}lexicographically smallest rotation of a string}{16}{subsection.9.7}%
-\contentsline {section}{\numberline {10}Trees}{16}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Centroid Decomposition}{16}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Dsu On Trees}{16}{subsection.10.2}%
+\contentsline {subsection}{\numberline {9.6}Zalgo Anany}{15}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}lexicographically smallest rotation of a string}{15}{subsection.9.7}%
+\contentsline {section}{\numberline {10}Trees}{15}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Centroid Decomposition}{15}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Dsu On Trees}{15}{subsection.10.2}%
 \contentsline {subsection}{\numberline {10.3}Heavy Light Decomposition (Along with Euler Tour)}{16}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Mo on Trees}{17}{subsection.10.4}%
-\contentsline {section}{\numberline {11}Numerical}{17}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Lagrange Polynomial}{17}{subsection.11.1}%
+\contentsline {subsection}{\numberline {10.4}Mo on Trees}{16}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Numerical}{16}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Lagrange Polynomial}{16}{subsection.11.1}%
 \contentsline {subsection}{\numberline {11.2}Polynomials}{17}{subsection.11.2}%
-\contentsline {section}{\numberline {12}Guide}{18}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Strings}{18}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Volume}{18}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Graph Theory}{18}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Joseph problem}{18}{subsection.12.4}%
+\contentsline {section}{\numberline {12}Guide}{17}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Strings}{17}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Volume}{17}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Graph Theory}{17}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Joseph problem}{17}{subsection.12.4}%

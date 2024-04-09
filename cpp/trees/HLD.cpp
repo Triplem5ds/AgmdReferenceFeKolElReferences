@@ -1,12 +1,9 @@
-/*
-    Notes:
-        1. 0-based
-        2. solve function iterates over segments and handles them seperatly 
-        if you're gonna use it make sure you know what you're doing
-        3. to update/query segment in[node], out[node]
-        4. to update/query chain in[nxt[node]], in[node]
-        nxt[node]: is the head of the chain so to go to the next chain node = par[nxt[node]]
-*/
+// 1. 0-based
+// 2. solve function iterates over segments and handles them seperatly 
+// if you're gonna use it make sure you know what you're doing
+// 3. to update/query segment in[node], out[node]
+// 4. to update/query chain in[nxt[node]], in[node] 
+// nxt[node]: is the head of the chain so to go to the next chain node = par[nxt[node]]
 int sz[mxN], nxt[mxN];
 int in[N], out[N], rin[N];
 vector<int> g[mxN];
