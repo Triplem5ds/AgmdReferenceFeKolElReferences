@@ -56,10 +56,11 @@ def get_tex(sections):
     for (section_name, subsections) in sections:
         tex += '\\section{%s}\n' % texify(section_name)
         for (filename, subsection_name) in subsections:
+            tex += '\\vspace{-1ex}\n'
             tex += '\\subsection{%s}\n' % texify(subsection_name)
-            tex += '\\vspace{-2.2ex}\n'
+            tex += '\\vspace{-2.3ex}\n'
             tex += '\\raggedbottom\\lstinputlisting[style=%s]{%s}\n' % (get_style(filename), filename)
-            tex += '\\vspace{-3.2ex}\n'
+            tex += '\\vspace{-3.3ex}\n'
             tex += '\\hrulefill\n'
         tex += '\n'
     return tex

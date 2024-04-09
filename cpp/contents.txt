@@ -1,11 +1,16 @@
-[Template]
+[Notes]
 template/template.cpp	template
+notes.cpp	notes
 
-[Combinatorics]
-Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
-Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
+#[Template]
+#template/template.cpp	template
+
+#[Combinatorics]
+#Combinatorics/Burnside's_lemma.cpp	Burnside Lemma
+#Combinatorics/Catalan_Numbers.cpp	Catlan Numbers
 
 [Algebra]
+#Algebra/FibonacciNumbers.cpp	Fibonacci
 Algebra/GrayCode.cpp	Gray Code
 Algebra/FactorialMod.cpp	Factorial modulo in p*log(n) (Wilson Theroem)
 Algebra/Enumerating_all_submasks_of_a_given_mask.cpp	Iteration over submasks
@@ -13,15 +18,14 @@ Algebra/FastFourierTransform.cpp	FFT
 Algebra/FastFourierTransformMod.cpp	FFT with mod
 Algebra/FastSubsetTransform.cpp	convolutions of AND-XOR-OR
 Algebra/NTT_KACTL.cpp	NTT of KACTL
-Algebra/FibonacciNumbers.cpp	Fibonacci
 Algebra/GaussDeterminant.cpp	Gauss Determinant
 Algebra/GaussSystemOfLinearEquations.cpp	GAUSS SLAE
 Algebra/MatrixInverse.cpp	Matrix Inverse
 
 [Data Structures]
 DataStructures/UnionFindRollback.cpp	UnionFindRollback
-DataStructures/2DBIT.cpp	2D BIT
-DataStructures/2DSparseTable.cpp	2D Sparse table
+#DataStructures/2DBIT.cpp	2D BIT
+#DataStructures/2DSparseTable.cpp	2D Sparse table
 DataStructures/MOwithUpdates.cpp	Mo With Updates
 DataStructures/ordered_set.cpp	Ordered Set
 DataStructures/PresistentSegTree.cpp	Persistent Seg Tree
@@ -41,11 +45,11 @@ Geo/UnionArea_Of_Rectangles.cpp	Rectangles Union
 
 [Graphs]
 #Graphs/2sat.cpp	2 SAD
+#Graphs/Kosaraju.cpp	Kosaraju
 Graphs/ArticulationPoint.cpp	Ariculation Point
 Graphs/BridgesTree_TreeDiameter.cpp	Bridges Tree and Diameter
 Graphs/DinicWithScalling.cpp	Dinic With Scalling
 Graphs/GomoryHu.cpp	Gomory Hu
-Graphs/Kosaraju.cpp	Kosaraju
 Graphs/MaxCliqueFinding.cpp	Maximum Clique
 
 Graphs/HopcraftKarp.cpp	HopcraftKarp matching (Bipartite)

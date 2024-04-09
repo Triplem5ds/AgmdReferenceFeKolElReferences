@@ -1,20 +1,17 @@
+// Note this code is considers also the empty suffix
+// so hear sa[0] = n and sa[1] is the smallest non empty suffix
+// and sa[n] is the largest non empty suffix
+// also LCP[i] = LCP(sa[i-1], sa[i]), meanining LCP[0] = LCP[1] = 0
+// if you want to get LCP(i..j) you need to build a mapping between
+// sa[i] and i, and build a min sparse table to calculate the minimum
+// note that this minimum should consider sa[i+1...j] since you don't want
+// to consider LCP(sa[i], sa[i-1])
+// you should also print the suffix array and lcp at the beginning of the contest
+// to clarify this stuff
 struct SuffixArray {
 	using vi = vector<int>;
 	#define rep(i,a,b)  for(int i = a; i < b; i++)
 	#define all(x) begin(x), end(x)
-    /*
-        Note this code is considers also the empty suffix
-        so hear sa[0] = n and sa[1] is the smallest non empty suffix
-        and sa[n] is the largest non empty suffix
-        also LCP[i] = LCP(sa[i-1], sa[i]), meanining LCP[0] = LCP[1] = 0
-        if you want to get LCP(i..j) you need to build a mapping between
-        sa[i] and i, and build a min sparse table to calculate the minimum
-        note that this minimum should consider sa[i+1...j] since you don't want
-        to consider LCP(sa[i], sa[i-1])
-        
-        you should also print the suffix array and lcp at the beginning of the contest
-        to clarify this stuff
-    */
 	vi sa, lcp;
 	SuffixArray(string& s, int lim=256) { // or basic_string<int>
 		int n = sz(s) + 1, k = 0, a, b;

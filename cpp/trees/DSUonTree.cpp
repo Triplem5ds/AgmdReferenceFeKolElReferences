@@ -11,13 +11,10 @@ void dfs(int node, int par) {
     }
 }
 void add(int node, int par, int bigChild, int delta) {
-
     ///modify node to data structure
-
     for(auto v : adj[node])
     if(v != par && v != bigChild) 
         add(v, node, bigChild, delta);
-
 }
 void dfs2(int node, int par, bool keep) {
     for(auto v : adj[node])if(v != par && v != bigChild[node]) {
@@ -27,7 +24,6 @@ void dfs2(int node, int par, bool keep) {
         dfs2(bigChild[node], node, true);
     }
     add(node, par, bigChild[node], 1);
-    ///process queries
     if(!keep) {
         add(node, par, -1, -1);
     }

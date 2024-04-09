@@ -31,6 +31,8 @@
         "numeric": "cpp",
         "iostream": "cpp",
         "limits": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "__locale": "cpp",
+        "ios": "cpp"
     }
 }

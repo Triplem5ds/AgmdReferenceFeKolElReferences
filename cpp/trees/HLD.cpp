@@ -8,7 +8,6 @@ int sz[mxN], nxt[mxN];
 int in[N], out[N], rin[N];
 vector<int> g[mxN];
 int par[mxN];
-
 void dfs_sz(int v = 0, int p = -1) {
 	sz[v] = 1;
 	par[v] = p;
@@ -25,7 +24,6 @@ void dfs_sz(int v = 0, int p = -1) {
 	if(v != 0)
 		g[v].pop_back();
 }
-
 void dfs_hld(int v = 0) {
 	in[v] = t++;
 	rin[in[v]] = v;
@@ -35,7 +33,6 @@ void dfs_hld(int v = 0) {
 	}
 	out[v] = t;
 }
-
 int n;
 bool isChild(int p, int u){
   return in[p] <= in[u] && out[u] <= out[p];

@@ -21,33 +21,16 @@ void fft(vector<C>& a) {
         }
 }
 vd conv(const vd& a, const vd& b) {
-    if (a.empty() || b.empty()) return {};
-    vd res(sz(a) + sz(b) - 1);
-    int L = 32 - __builtin_clz(sz(res)), n = 1 << L;
-    vector<C> in(n), out(n);
-    copy(all(a), begin(in));
-    rep(i, 0, sz(b)) in[i].imag(b[i]);
-    fft(in);
-    for (C& x : in) x *= x;
-    rep(i, 0, n) out[i] = in[-i & (n - 1)] - conj(in[i]);
-    fft(out);
-    ///	rep(i,0,sz(res)) res[i] = (MOD+(ll)round(imag(out[i]) / (4 * n))) % MOD;    ///in case of mod
-    rep(i, 0, sz(res)) res[i] = imag(out[i]) / (4 * n);
-    return res;
+	if (a.empty() || b.empty()) return {};
+	vd res(sz(a) + sz(b) - 1);
+	int L = 32 - __builtin_clz(sz(res)), n = 1 << L;
+	vector<C> in(n), out(n);
+	copy(all(a), begin(in));
+	rep(i,0,sz(b)) in[i].imag(b[i]);
+	fft(in);
+	for (C& x : in) x *= x;
+	rep(i,0,n) out[i] = in[-i & (n - 1)] - conj(in[i]);
+	fft(out);
+	rep(i,0,sz(res)) res[i] = imag(out[i]) / (4 * n);
+	return res;
 }
-
-//Applications
-//1-All possible sums
-
-//2-All possible scalar products
-// We are given two arrays a[] and b[] of length n. 
-//We have to compute the products of a with every cyclic shift of b.
-//We generate two new arrays of size 2n: We reverse a and append n zeros to it. 
-//And we just append b to itself. When we multiply these two arrays as polynomials, 
-//and look at the coefficients c[n-1], c[n], ..., c[2n-2] of the product c, we get:
-//c[k]=sum i+j=k  a[i]b[j]
-
-//3-Two stripes
-//We are given two Boolean stripes (cyclic arrays of values 0 and 1) a and b.
-//We want to find all ways to attach the first stripe to the second one,
-//such that at no position we have a 1 of the first stripe next to a 1 of the second stripe.

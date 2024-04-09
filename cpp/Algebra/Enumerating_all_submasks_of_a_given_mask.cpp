@@ -1,4 +1,2 @@
 int s = m;
-while (s > 0) {
- s = (s-1) & m;
-}
+while (s > 0) s = (s-1) & m;
