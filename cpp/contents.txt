@@ -35,7 +35,6 @@ DataStructures/Wavelet_tree.cpp	Wavelet Tree
 DataStructures/SparseTable.cpp	SparseTable
 
 [DP]
-DP/DynamicConnectivetyCHT.cpp	Dynamic Connectivety with SegTree
 DP/LineContainer.cpp	CHT Line Container
 
 [Geometry]
@@ -57,7 +56,6 @@ Graphs/Kosaraju.cpp	Kosaraju
 Graphs/ManhattanMST.cpp	Manhattan MST
 Graphs/MaxCliqueFinding.cpp	Maximum Clique
 Graphs/MCMFSPFA.cpp	MCMF
-Graphs/MinimumArbroscene.cpp	Minimum Arbroscene in a Graph
 Graphs/MinimumVertexCover.cpp	Minmimum Vertex Cover (Bipartite)
 Graphs/prufer_code.cpp	Prufer Code
 Graphs/PushRelabel.cpp	Push Relabel Max Flow
